@@ -1,0 +1,191 @@
+
+header{
+	background-color: #808080;
+	width: 133px;
+	height: 27px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	color: #fff;
+	vertical-align: middle;
+	line-height: 27px;
+	text-align: center;
+	padding: 5px;
+	margin-top: 15px;
+	margin-left: 258px;
+}
+.content-page{
+	background-color: #757C75;
+	width: 744px;
+	height: 100%;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+.box{
+	display: inline-block;
+	width: 220px;
+	height: 203px;
+
+}
+
+.box:hover{
+	opacity: 0.8;
+}
+
+.odin-box{
+	background-color: #FF8F63;
+}
+
+.about-box{
+	background-color: #AAFF89;
+}
+
+.project-box{
+	background-color: #66FFB2;
+
+}
+
+h2{
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	line-height: 53px;
+	font-weight: 500;
+}
+
+.box-description{
+	display: block;
+	color: #fff;
+	width: 160px;
+	height: 79px;
+	margin: 10px 10px 20px 40px;
+	margin-top: 35px;
+	position: absolute;
+	font-weight: 400;
+}
+
+
+
+body{
+	font-family: "Segoe UI";
+	background: #526C7F;
+
+}
+
+
+.odin-box-content{
+	width: 671px;
+	height: 306px;
+	background-color: #FF8F63;
+	margin: 5px;
+	border-radius: 15px;
+	color: #fff;
+	display: none;
+}
+
+
+.about-box-content{
+	width: 671px;
+	height: 100%;
+	background-color: #AAFF89;
+	margin: 5px;
+	border-radius: 15px;
+	color: #fff;
+	display: none;
+}
+
+.task-box{
+	margin: 5px;
+	padding: 5px;
+}
+.yt{
+	background-color: #fff;
+	border-radius: 5px;
+	width: 186px;
+	height: 144px;
+	display: inline-block;
+}
+
+.yt a{
+    margin: 0px 10px 0px 10px;
+	font-size: 13px;
+	line-height: 144px;
+	color: #e62117;
+}
+
+.task-desc{
+	margin: 15px;
+	padding: 10px;
+	color: #fff;
+	font-size: 17px;
+	letter-spacing: 1px;
+	display: inline-block;
+
+}
+.task-desc a{
+	color: black;
+}
+
+a{
+	text-decoration: none;
+
+}
+
+.important{
+	display: inline-block;
+}
+
+.picture-box{
+	background-color: #fff;
+	width: 114px;
+	height: 112px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+
+.picture-box-bar{
+	background-color: #AAFFC1;
+	width: 114px;
+	height: 18px;
+}
+
+.picture-box-contain,.technologies-box-contain{
+	padding: 10px;
+	margin: 10px;
+}
+
+.html-img{
+	width:236px;
+	height: 100%;
+	vertical-align: middle;
+	display: inline-block;
+	margin-top: 35px;
+}
+
+
+.technologies-box{
+	background-color: #E5FFED;
+	text-align: center;
+}
+
+
+.html-desc{
+
+	color: #333333;
+	font-weight: bolder;
+	display: block;
+	padding: 55px;
+	line-height: 25px;
+	margin-right: 200px;
+
+}
+
+
+
+.source{
+	font-style: italic;
+	font-weight: 500 !important;
+}
+
+
