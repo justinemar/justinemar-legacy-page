@@ -189,3 +189,13 @@ a{
 }
 
 
+.twitter-follow-button{
+	display:block;
+	position: fixed;
+	margin-top: 25px;
+}
+
+iframe{
+	display: block !important;
+	position: fixed !important;
+}
