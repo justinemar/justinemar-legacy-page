@@ -109,18 +109,31 @@ body{
 
 }
 .yt,.google{
-	background-color: #fff;
 	border-radius: 5px;
 	width: 186px;
 	height: 144px;
 	display: inline-block;
+	background-color: #fff;
+	
+}
+
+.yt{
+	background:#fff url("../images/badge.png") no-repeat;
+	background-position: top right;
+	background-size: 55px 25px;
+}
+.google{
+	background: #fff url("../images/badge2.png") no-repeat;
+	background-position: top right;
+	background-size: 45px 25px;
 }
 
 .yt a, .google a{
-    margin: 0px 10px 0px 10px;
+    margin: 0px 10px 0px 30px;
 	font-size: 13px;
 	line-height: 144px;
 	color: #e62117;
+	text-decoration: underline;
 }
 
 .task-desc{
