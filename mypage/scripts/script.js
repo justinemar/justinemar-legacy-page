@@ -1,11 +1,15 @@
 $(document).ready(function(){
 	$(".task-desc").hide();
+
     $(".yt").hover(function(){
-    $(".task-desc").toggle('Bind');
+    $(".yt-task-desc").toggle('Bind');
 
 
 	});
-
+    
+    $(".google").hover(function(){
+    	$(".google-task-desc").toggle('Bind');
+    })
 
 	$(".odin-box").click(function(){
 		$(".odin-box-content").toggle('Drop');
@@ -17,6 +21,10 @@ $(document).ready(function(){
 
 
 	});
+
+
+
+	
 });
 
 
