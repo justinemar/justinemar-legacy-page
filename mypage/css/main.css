@@ -75,12 +75,13 @@ body{
 
 .odin-box-content{
 	width: 671px;
-	height: 306px;
+	height: 100%;
 	background-color: #FF8F63;
 	margin: 5px;
 	border-radius: 15px;
 	color: #fff;
 	display: none;
+
 }
 
 
@@ -97,8 +98,9 @@ body{
 .task-box{
 	margin: 5px;
 	padding: 5px;
+
 }
-.yt{
+.yt,.google{
 	background-color: #fff;
 	border-radius: 5px;
 	width: 186px;
@@ -106,7 +108,7 @@ body{
 	display: inline-block;
 }
 
-.yt a{
+.yt a, .google a{
     margin: 0px 10px 0px 10px;
 	font-size: 13px;
 	line-height: 144px;
@@ -133,6 +135,10 @@ a{
 
 .important{
 	display: inline-block;
+}
+
+.picture-box{
+	display: block;
 }
 
 .picture-box{
@@ -209,4 +215,16 @@ h2{
 	text-align: center;
 	line-height: 30px;
 	vertical-align: middle;
+}
+
+.intro-paragraph{
+	color: #333333;
+	font-weight: bolder;
+	display: block;
+	line-height: 25px;
+	padding: 55px;
+}
+
+.about-me-desc{
+	background-color: #E5FFED;
 }
