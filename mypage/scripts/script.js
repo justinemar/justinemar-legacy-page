@@ -10,7 +10,7 @@ $(document).ready(function(){
     });
 
 	$(".odin-box").click(function(){
-		$(".content-box").toggle('Drop');
+		$(".odin-box-content").toggle('Drop');
 	});
 
 	$(".about-box").click(function(){
