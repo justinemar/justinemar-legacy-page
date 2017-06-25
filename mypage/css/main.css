@@ -1,5 +1,9 @@
-
-header{
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.name{
 	background-color: #808080;
 	width: 133px;
 	height: 27px;
@@ -7,17 +11,18 @@ header{
 	border-top-right-radius: 15px;
 	color: #fff;
 	vertical-align: middle;
-	line-height: 27px;
+	line-height: 28px;
 	text-align: center;
-	padding: 5px;
 	margin-top: 15px;
-	margin-left: 258px;
+	margin-left: 265px;
+	display: table-cell;
 }
 .content-page{
+	clear: both;
 	background-color: rgba(158, 197, 170, 0.15);
-	width: 744px;
+	max-width: 744px;
 	height: 100%;
-	padding: 5px;
+	padding: 35px;
 	margin: 0 auto;
 }
 
@@ -74,7 +79,7 @@ body{
 
 
 .odin-box-content{
-	width: 671px;
+	max-width: 671px;
 	height: 100%;
 	background-color: #FF8F63;
 	margin: 5px;
@@ -84,8 +89,8 @@ body{
 }
 
 .project-box-content{
-	width: 671px;
-	height: 305px;
+	max-width: 671px;
+	min-height: 305px;
 	background-color: #66FFB2;
 	margin: 5px;
 	border-radius: 15px;
@@ -94,7 +99,7 @@ body{
 }
 
 .about-box-content{
-	width: 671px;
+	max-width: 671px;
 	height: 100%;
 	background-color: rgb(102, 220, 255);
 	margin: 5px;
@@ -114,7 +119,7 @@ body{
 	height: 144px;
 	display: inline-block;
 	background-color: #fff;
-	
+	margin: 5px;
 }
 
 .yt{
@@ -223,17 +228,12 @@ a{
 	font-weight: 500 !important;
 }
 
-
-.twitter-follow-button{
-	display:block;
+.follow-button{
+	display: inline-grid;
 	position: fixed;
-	margin-top: 25px;
 }
 
-iframe{
-	display: block !important;
-	position: fixed !important;
-}
+
 
 h2{
 	width: 100%;
