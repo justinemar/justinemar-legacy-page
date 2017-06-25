@@ -17,6 +17,9 @@ $(document).ready(function(){
 		$(".about-box-content").toggle('Drop');
 	});
 
+	$(".project-box").click(function(){
+		$(".project-box-content").toggle('Drop');
+	});
 
 
 	
