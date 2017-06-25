@@ -14,7 +14,7 @@ header{
 	margin-left: 258px;
 }
 .content-page{
-	background-color: #757C75;
+	background-color: rgba(158, 197, 170, 0.15);
 	width: 744px;
 	height: 100%;
 	padding: 5px;
@@ -37,7 +37,7 @@ header{
 }
 
 .about-box{
-	background-color: #AAFF89;
+	background-color: rgb(102, 220, 255);
 }
 
 .project-box{
@@ -81,14 +81,22 @@ body{
 	border-radius: 15px;
 	color: #fff;
 	display: none;
-
 }
 
+.project-box-content{
+	width: 671px;
+	height: 305px;
+	background-color: #66FFB2;
+	margin: 5px;
+	border-radius: 15px;
+	color: #fff;
+	display: none;
+}
 
 .about-box-content{
 	width: 671px;
 	height: 100%;
-	background-color: #AAFF89;
+	background-color: rgb(102, 220, 255);
 	margin: 5px;
 	border-radius: 15px;
 	color: #fff;
@@ -161,7 +169,7 @@ a{
 	margin: 10px;
 }
 
-.html-img{
+.html-img, .css-img{
 	width:236px;
 	height: 100%;
 	vertical-align: middle;
@@ -171,7 +179,7 @@ a{
 
 
 .technologies-box{
-	background-color: #E5FFED;
+	background-color: #ffffff;
 	text-align: center;
 }
 
@@ -183,10 +191,18 @@ a{
 	display: block;
 	padding: 55px;
 	line-height: 25px;
-	margin-right: 200px;
-
+	margin-right:15px;
 }
 
+.css-desc{
+	color: #333333;
+	font-weight: bolder;
+	display: block;
+	padding: 55px;
+	line-height: 25px;
+	margin-right: 15px;
+
+}
 
 
 .source{
@@ -226,5 +242,15 @@ h2{
 }
 
 .about-me-desc{
-	background-color: #E5FFED;
+	background-color: #ffffff;
+}
+
+
+.project-desc{
+	margin: 15px;
+	padding: 10px;
+	color: #fff;
+	font-size: 17px;
+	letter-spacing: 1px;
+	display: inline-block;
 }
