@@ -166,13 +166,14 @@ ul{
 #article-author a{
 	text-decoration: none;
     color: rgba(255,255,255,.6);
+    font-size: 12px;
 }
 
 #article-author a:hover{
 	color: silver;
 }
 .article-info .fa-clock-o, .article-info .fa-share-alt{
-	font-size: 15px;
+	font-size: 12px;
 	color: rgba(255,255,255,.6);
 }
 
@@ -191,15 +192,97 @@ ul{
 	height: 100%;
 }
 
+.cover-img-small-2{
+    background: linear-gradient(550deg, rgb(72, 62, 13) 0%, transparent 50%), linear-gradient(to top, rgba(163, 175, 67, 0.9) 0%, rgba(0, 0, 0, 0.09) 100%), url(https://cdn2.tnwcdn.com/wp-content/blogs.dir/1/files/2017/06/Ransomware-Locked-PC-Computer-Security-796x398.jpg) no-repeat;	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
 .small-box{
 	width: 31.3333%;
-    height: 50%;
-    outline: 1px solid red;
+    height: 45%;
+    /* outline: 1px solid red; */
     float: right;
     margin: -484px 8px 0px 0px;
-}}
+}
 
 
-.article-category-small{
-	
+.small-box-2{
+	width: 31.3333%;
+    height: 45%;
+    /* outline: 1px solid red; */
+    float: right;
+    margin: -246px 8px 0px 0px;
+}
+
+.article-category-small, .article-category-small-2{
+	text-decoration: none;
+	color: #fff;
+
+}
+
+.article-about-small{
+	margin-top: -200px;
+    padding: 25px;
+}
+
+.article-about-small-2{
+	padding: 25px;
+	margin-top: -195px;
+}
+
+.article-title-small, .article-title-small-2{
+    font-size: 30px;
+    color: #fff;
+}
+
+
+.article-info-small{
+	margin-top: -25px;
+	margin-left: 25px;
+}
+
+.article-info-small-2{
+	margin-left: 25px;
+	margin-top: -25px;
+}
+
+#article-author-small, #article-author-small-2{
+	color: silver;
+}
+
+#article-author-small a, #article-author-small-2 a{
+	color: silver;
+	font-size: 12px;
+}
+
+
+.article-info-small .fa-clock-o, .article-info-small .fa-share-alt , .article-info-small-2 .fa-clock-o, .article-info-small-2 .fa-share-alt{
+	font-size: 12px;
+	color: rgba(255,255,255,.6);
+}
+
+.adbar{
+	max-height: 95px;
+	max-width: 550px;
+	height: 100%;
+    width: 100%;
+    background-color: #5a4646;
+}
+
+
+#adspace{
+	display: block;
+ 	margin: 0px 250px 0px 250px;
+}
+
+.article-1{
+	background-color: grey;
+	width: 250px;
+	height: 150px;
+	display: inline-block;
+}
+
+.related-articles{
+	margin-left: 50px;
 }
