@@ -59,6 +59,7 @@ ul{
 	background-color: #FFFFFF;
 	max-height: 50px;
 	height: 50px;
+	z-index: 12;
 }
 
 .categories{
@@ -145,6 +146,8 @@ ul{
     width: 100%;
     padding: 15px;
 }
+
+
 .article-info{
 	color: #fff;
 	position: relative;
@@ -347,12 +350,84 @@ ul{
         background-color: hsla(360,60%,40%,0.7);
     }
 }
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-width: 768px) {
     .item-list {
-        display: none;
+    display: none;
     }
     .navs{
-    	margin-top: -55px;
-    	position: fixed;
+    margin-top: -55px;
+    position: fixed;
     }
+    .article-about {
+    position: relative;
+    margin-top: -130px;
+    width: 100%;
+    padding: 15px;
+	}
+	.tnw-logo{
+	display: none;
+	}
+	.cover-img{
+	width: 100%;
+    height: 40%;
+	}
+	.huge-box{
+    margin: 10px;
+    display: inline;
+	}
+	.articles-box{
+	padding: 5px;
+	}
+	.article-date{
+	display: none;
+	}
+	.article-about{
+    padding: 15px;
+	}
+	.article-category{
+	font-size: 12px;
+	}
+	.article-title{
+	font-size: 20px;
+    font-weight: bolder;
+	}
+
+
+ 	.small-box{
+ 		width: 100%;
+    display: inline;
+    padding: 1px;
+    margin: 0;
+	}
+
+	.cover-img-small{
+    width: 100%;
+    height: 40%;
+	}
+
+	.article-about-small{
+	margin-top: -130px;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+	}
+
+	.article-category-small{
+	font-size: 12px;
+	}
+
+	.article-title-small{
+    font-size: 20px;
+    font-weight: bolder;
+	}
+
+	.article-info-small{
+	margin-left: 15px;
+    font-size: 14px;
+	}
+	
 }
+
+
+
