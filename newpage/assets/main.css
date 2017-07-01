@@ -60,9 +60,11 @@ body{
 }
 #banner-text{
     text-align: center;
-    color: rgb(57, 48, 58);
+    color: #fff;
     line-height: 250px;
+    text-shadow: 1px 1px 1px black;
 }
+
 
 #banner-text-intro{
     text-align: center;
