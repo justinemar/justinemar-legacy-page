@@ -172,7 +172,7 @@ h5{
     }
 }
 
-@media only screen and (max-device-width: 320px){
+@media only screen and (max-width: 320px){
     .cat-1-items{
         display: flex;
     }
