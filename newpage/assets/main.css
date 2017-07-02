@@ -117,7 +117,49 @@ body{
 .right{
     float: right;
 }
-
+#html{
+    background-color: #ea4b0e;
+}
+#css{
+    background-color: #de9c4d;
+}
+#js{
+    background-color: #14a92d;
+}
+#html,#css,#js{
+    color: #fff;
+    border-radius: 5px;
+}
+.html-box #i{
+    background-color: brown;
+}
+.html-box #ii{
+    background-color: teal;
+}
+.html-box #iii{
+    background-color: #1d41a7;
+}
+.css-box #iv{
+    background-color: #1B946B;
+}
+.css-box #v{
+    background-color: #7167C3;
+}
+.css-box #vi{
+    background-color: #6D9455;
+}
+.css-box #vii{
+    background-color: #6F2525;
+}
+.css-box #viii{
+    background-color: #E85C76;
+}
+.js-box #ix{
+    background-color: #F34B30;
+}
+.js-box #x{
+    background-color: #E4B01C;
+}
 h1{
     font-weight: lighter;
     font-size: 50px;
@@ -144,8 +186,15 @@ hr{
 }
 h5{
     font-weight: lighter;
+    border-radius: 5px;
+    color: #fff;
+    height: 25px;
+    vertical-align: middle;
+    line-height: 25px;
 }
-
+h5:hover{
+    opacity: 0.5;
+}
 
 @media only screen and (min-width: 300px) and (max-width: 800px) {
     body:after {
@@ -190,6 +239,10 @@ h5{
     body:after {
         content: "768 to 1024px";
         background-color: hsla(270,60%,40%,0.7);
+    }
+
+    .cat-1-items{
+        padding: 15px;
     }
 }
 
