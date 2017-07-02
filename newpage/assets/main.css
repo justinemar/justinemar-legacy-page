@@ -147,7 +147,7 @@ h5{
 }
 
 
-@media only screen and (min-width: 320px) and (max-width: 800px) {
+@media only screen and (min-width: 300px) and (max-width: 800px) {
     body:after {
         content: "320 to 480px";
         background-color: hsla(90,60%,40%,0.7);
@@ -172,7 +172,7 @@ h5{
     }
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 360px){
     .cat-1-items{
         display: flex;
     }
