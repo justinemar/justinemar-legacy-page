@@ -280,8 +280,12 @@ h1 {
     margin-left: 0px;
     margin-top: 0px;
     margin: 0px 80px 0px 80px;
+    font-size: 2em;
 }
 
+#name{
+  font-size: 2em;
+}
 .social-links {
     display: none;
 }
