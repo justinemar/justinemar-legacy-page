@@ -1,0 +1,207 @@
+
+body{
+	font-family: 'Segoe UI', sans-serif;
+}
+
+/* HEADER */
+.header-container{
+	width: 80%;
+	padding: 20px;
+	margin: auto;
+}
+
+#main-header{
+	background-color: #FF6A00;
+}
+
+#main-logo{
+	float: left;
+}
+
+
+/* NAVBAR */
+
+#navbar li{
+	display: inline;
+	float: left;
+	padding: 0 20px 0 20px;
+}
+
+#navbar{
+	float: right;
+	font-size: 20px;
+	font-weight: bolder;
+	margin-top: 150px;
+}
+
+
+
+/* HERO */
+
+#hero{
+	min-height: 514px;
+	background: url("../images/image-hero.png") no-repeat;
+	background-size: cover;
+	color: #ffffff;
+}
+
+
+#hero h1{
+	font-size: 55px;
+	letter-spacing: 1px;
+}
+
+#hero p{
+	margin: auto;
+	width: 55%;
+	font-size: 25px;
+	letter-spacing: 1px;
+}
+
+/* NEWSLETTER */
+
+
+#newsletter-form{
+	float: right;
+	margin: 1.6% 0px 1.6% 0px;
+}
+#newsletter h2{
+	float: left;
+}
+
+
+#newsletter{
+	background: #404040;
+	color: #ffffff;
+	text-align: center;
+	padding: 10px;
+}
+
+
+#newsletter-form input[type=text]{
+	height: 25px;
+    width: 250px;
+}
+
+#newsletter #submit{
+	border: 0;
+	background: #FF6A00;
+	border-radius: 10px;
+	color: #ffffff;
+	height: 31px;
+}
+
+
+
+/* TESTIMONIALS */
+
+#testimonials #reviews-box{
+	background: #D8D8D8;
+	color: #FF6A00;
+	border-radius: 10px;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+
+#testimonials .from{
+	color: #3F3F3F;
+	font-weight: 500;
+}
+
+#testimonials .fa-quote-right, #testimonials .fa-quote-left{
+	color: #000000;
+	margin: 5px;
+}
+
+#testimonials #services-btn{
+	background: #FF6A00;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+	border: 0;
+	height: 35px;
+	display: block;
+	margin: auto;
+	height: 55px;
+	border-radius: 10px;
+	margin-top: 30px;
+	margin-bottom: 35px;
+}
+
+
+
+
+/* FOOTER */
+
+#main-footer{
+	background: #151313;
+	margin-top: 80px;
+	height: 70px;
+}
+
+#main-footer #social-links{
+	float: left;
+	margin-top: 5px;
+}
+
+#main-footer #social-links .fa-facebook{
+	border-radius: 100%;
+	display: block;
+	margin-top: 6px;
+}
+
+#main-footer #social-links .fa-twitter{
+	border-radius: 100%;
+	display: block;
+	margin-top: 6px;
+}
+#main-footer #social-links .fa-facebook, #main-footer #social-links .fa-twitter{
+	font-size: 20px !important;
+	margin-right: 10px;
+}
+
+#main-footer #col-footer{
+	color: #ffffff;
+	margin-top: -35px;
+}
+
+#main-footer #col-footer #copyright{
+	color: #FF6A00;
+	font-weight: bolder;
+}
+/* GLOBAL */
+.active{
+	border-bottom: 1px solid #ffffff;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	color: #ffffff;
+	text-decoration: none;
+}
+.container{
+	width: 80%;
+	margin: auto;
+}
+
+
+button:hover{
+	opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
