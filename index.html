@@ -1,26 +1,170 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-<style>
- ul,li{
-  list-style-type:none;
- }
-  </style>
-</head>
+    <head>
+    <meta name="referrer" content="origin">
+    <meta charset="utf-8">
+    <meta name="description" content="Justine Cantado personal website/portfolio">
+    <meta name="keywords" content="Justin Cantado,Justine Cantado,Manila Web Developer,Philippines web developer,Filipino Web Developer,Front-end developer philippines">
+    <meta author="Justine Cantado">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Justin Cantado | Front-End Developer</title>
+    <link rel="stylesheet" href="./stylesheet/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    </head>
+    
+    <body>
+        <header id="main-header">
+            
+            <div class="introduction">
+                <div id="intro-wrap">
+                <h1 id="greeting">Hey!</h1>
+                <h6 id="intro-text">My name is Justin Cantado. I'm a front-end Developer.</h6>
+                </div>
+            </div>
+            
+            <div class="button-wrap">
+                <button onclick="hugMe()" type="button">SEND HUGS</button>
+                <p id="countHugs"></p>
+            </div>
+            
+        </header>
+      
+        <section id="main-section">
+            <div class="about-section">
+                <div class="about-bg">
+                    <div class="about-bg-top">
+                    </div>
+                </div>
+                <div class="about-main">
+                    <div id="about-title">
+                        <h2>ABOUT ME</h2>
+                    </div>
+                    <div id="about-photo">
+                        <img src="./images/8biticon.jpg"/>
+                    </div>
+                    <div id="about-intro">
+                        <h3 id="name">Justin Cantado</h3>
+                        <h3 id="title">Front-End Developer from Manila, Philippines</h3>
+                        <h3 id="age">19 Years old</h3>
+                    </div>
+                    <hr>
+                    <div id="about-content">
+                        <p>I'm Front-End Developer, but i am studying Ruby on Rails to become full-stack (already deeply inlove) with this language. I always tend to find things to do beside coding like playing video games and watching animes!, I love astronomy and anything that involves technology. I have small circle mostly from my past schools, colleagues and online friends that i work with for a project/freelance work.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="nav-section">
+            <div class="portfolio-section">
+                <div class="portfolio-details">
+                    <ul>
+     
+                        <li id="rocket" class="btn"><img src="./images/rocket.png" alt="a rocket" /></li>
+                        <li id="globe" class="btn"><img src="./images/globe.png" alt="a globe" /></li>
+                        <li id="cubes" class="btn"><img src="./images/cubes.png" alt="a cubes" /></li>
+            
+                    </ul>
+                </div>
+                
+                <div class="portfolio-details-container">
+                <div class="divtab portfolio-details-wrap rocket-content">
+                <h1 class="portfolio-header"><span>51</span> projects.</h1>
+                 <h1 class="portfolio-header"><span>lots</span> of coffee.</h1>
+                </div>
+                
+                <div class="divtab portfolio-details-wrap globe-content">
+                <h1 class="portfolio-header"><span>Live</span> projects</h1>
+                 <h1 class="portfolio-header medium-h1"><span>Recent</span> projects i've done and some examples</h1>
+                 <div class="projects-box">
+                     <div class="project-container">
+                         
+                     </div>
+                     <div class="project-container">
+                         
+                     </div>
+                     <div class="project-container">
+                         
+                     </div>
+                     <div class="project-container">
+                         
+                     </div>
+                     <div class="project-container">
+                         
+                     </div>
+                 </div>
+                </div>
+                
+                <div class="divtab portfolio-details-wrap cube-content">
+                <h1 class="portfolio-header"><span>Personal</span> crafts</h1>
+                 <h1 class="portfolio-header medium-h1"><span>Here lies</span> my personal works, have you ever been bored?!</h1>
+                </div>
+            </div>
+            </div>
+              
+            <div id="socials-nav">
+                <div class="social-nav-wrap">
+                    <div class="social-nav-header"><h1>Get in touch.</h1></div>
+                    <div class="social-nav-btn">
+                        <ul>
+                            <li id="linkedIn" class="social-btn"><a href="https://www.linkedin.com/in/justine-cantado-130794a7/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></a></i>
+</li>
+                            
+                            <li id="twitter" class="social-btn"><a href="https://twitter.com/justimhar" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></a></i>
+</li>
+                            <li id="github" class="social-btn"><a href="https://github.com/justinemar" target="_blank"><i class="fa fa-github" aria-hidden="true"></a></i>
+</li>
+                        </ul>
+                    </div>
+                 
+                </div>
+                <form id="contact-form" action="http://formspree.io/jmarcantado@gmail.com" method="POST">
 
+    <div class="form-title">Name:</div>
+    <input type="text" name="name" placeholder="Enter your name" class="form-field">
 
-<body>
-  <div>
-  Currently building new design, you can contact me with the following.
-   <ul>
-  <li><a href="https://github.com/justinemar" target="_blank">Github</a></li>
-  <li><a href="https://www.twitter.com/jstinmhar" target="_blank">Twitter</a></li>
-  <li><a href="mailto:jmhar-cantado@cruisetouch.com?Subject=Hello%20again" target="_top">Send Mail: jmhar-cantado@cruisetouch.com</a></li>
-   </ul>                                                        
-  I'm working as Front-End Engineer at Cruisetouch, but still looking for opportunities.
-                                                                </div>
-</body>
+    <div class="form-title">Email:</div>
+    <input type="email" name="_replyto" placeholder="Enter your email" class="form-field">
 
+    <div class="form-title">Website:<span style="color:#aaaaaa">(If applicable)</span>:</div>
+    <input type="url" name="website" placeholder="Enter your website" class="form-field">
+
+    <div class="form-title">Message:</div>
+    <textarea name="message" rows="10" placeholder="Enter your message" class="form-field form-message"></textarea>
+
+    <input type="hidden" name="_subject" value="Website contact" />
+    <input type="hidden" name="_next" value="//www.arthurgareginyan.com/thanks.html" />
+    <input type="text" name="_gotcha" style="display:none">
+
+    <div class="buttons-container">
+       <input type="submit" value="Send" class="buttons">
+    </div>
+    
+</form>
+            </div>
+        </section>
+     
+        <footer id="main-footer">
+            <div class="site-rights">
+                Justin Cantado &copy; 2017
+            </div>
+        </footer>
+        <script type="text/javascript" src="./scripts/main.js"></script>
+        <script>
+        /* Hugs logic */
+    function hugMe() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.hugCount) {
+            localStorage.hugCount = Number(localStorage.hugCount)+1;
+        } else {
+            localStorage.hugCount = 1;
+        }
+        document.getElementById("countHugs").innerHTML = "Woah you hug me " + localStorage.hugCount + " time(s) now";
+    } else {
+        document.getElementById("countHugs").innerHTML = ":( your browser does not support web storage... no hugs given..";
+    }
+}</script>
+    </body>
 </html>
-
