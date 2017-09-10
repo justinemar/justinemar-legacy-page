@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ececec;
+}
+
+
+.header-content{
+    background-color: #ffffff;
+    width: 100%;
+    height: 120px;
+    padding: 25px;
+    box-shadow: inset 7px 2px 14px 1px #a5a0a0;
+}
+
+.header-content h1{
+    font-family: "Syncopate";
+}
+.header-content h4{
+    font-family: Segoe UI;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+#main-header .parallax-1{
+    opacity: 0.9;
+    height: 585px;
+    background-attachment: fixed;
+    background-image: url("parallax.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-1 .caption-wrapper{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    text-align: center;
+    top: 350px;
+
+}
+.parallax-1 #caption{
+    font-size: 50px;
+    color: #ffffff;
+    vertical-align: middle;
+    box-shadow: 0 0 black;
+    font-family: bangers;
+    margin: 0 auto;
+}
+#main-section{
+    padding: 35px;
+}
+
+#main-section .about-me-wrapper{
+    box-shadow: -1px 4px 13px 0px #989696;
+    padding: 10px;
+    background: #ffffff;
+    height: 500px;
+}
+
+
+.about-me-wrapper h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Segoe UI';
+    font-weight: 100;
+    font-variant: all-petite-caps;
+}
+
+.about-me-p{
+   width: 100%;
+   margin-top: 60px;
+}
+.about-me-p p{
+    width: 100%;
+    max-width: 500px;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Segoe UI';
+    margin: 0 auto;
+}
+
+
+
+
+
+
+button{
+    padding: 15px;
+    width: 100%;
+    border: 0;
+    background: white;
+}
+
+
+.msg-box{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+
+.msg-box-content{
+    width: 350px;
+    background: cornflowerblue;
+    height: 250px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 150px;
+
+}
+
+.msg-box-content p{
+    margin: 15px;
+}
