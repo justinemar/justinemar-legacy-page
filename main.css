@@ -11,7 +11,7 @@ body{
 .header-content{
     background-color: #ffffff;
     width: 100%;
-    height: 120px;
+    height: 100%;
     padding: 25px;
     box-shadow: inset 7px 2px 14px 1px #a5a0a0;
 }
@@ -54,11 +54,12 @@ body{
     padding: 35px;
 }
 
-#main-section .about-me-wrapper{
+#main-section .about-me-wrapper, #main-section .portfolio-wrapper{
     box-shadow: -1px 4px 13px 0px #989696;
     padding: 10px;
     background: #ffffff;
-    height: 500px;
+    height: 100%;
+    margin-bottom: 25px;
 }
 
 
@@ -81,9 +82,26 @@ body{
     text-align: center;
     font-family: 'Segoe UI';
     margin: 0 auto;
+    margin-bottom: 150px;
 }
 
-
+.box-container{
+    width: 100%;
+    text-align: center;
+}
+.box-work{
+    width: 230px;
+    height: 250px;
+display: inline-flex;
+}
+.box-details{
+    position: absolute;
+    margin-top: 150px;
+    color: white;
+    text-shadow: 1px 1px 9px black;
+    width: 220px;
+    font-size: 14px;
+}
 
 
 
@@ -95,10 +113,37 @@ button{
     background: white;
 }
 
-
+#q{
+background: #1e5799;
+background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );
+}
+#w{
+background: #f2825b;
+background: -moz-linear-gradient(top, #f2825b 0%, #e55b2b 50%, #f07146 100%);
+background: -webkit-linear-gradient(top, #f2825b 0%,#e55b2b 50%,#f07146 100%);
+background: linear-gradient(to bottom, #f2825b 0%,#e55b2b 50%,#f07146 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2825b', endColorstr='#f07146',GradientType=0 ); 
+}
+#e{
+background: #a7cfdf;
+background: -moz-linear-gradient(top, #a7cfdf 0%, #23538a 100%);
+background: -webkit-linear-gradient(top, #a7cfdf 0%,#23538a 100%);
+background: linear-gradient(to bottom, #a7cfdf 0%,#23538a 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 );
+}
+#r{
+background: #b8c6df;
+background: -moz-linear-gradient(top, #b8c6df 0%, #6d88b7 100%);
+background: -webkit-linear-gradient(top, #b8c6df 0%,#6d88b7 100%);
+background: linear-gradient(to bottom, #b8c6df 0%,#6d88b7 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8c6df', endColorstr='#6d88b7',GradientType=0 );
+}
 .msg-box{
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 1;
 }
