@@ -82,12 +82,13 @@ body{
     text-align: center;
     font-family: 'Segoe UI';
     margin: 0 auto;
-    margin-bottom: 150px;
+    margin-bottom: 360px;
 }
 
 .box-container{
     width: 100%;
     text-align: center;
+    margin-bottom: 350px;
 }
 .box-work{
     width: 230px;
@@ -163,4 +164,67 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8c6df', end
 
 .msg-box-content p{
     margin: 15px;
+}
+
+#quick-nav{
+    top: 150px;
+    left: 85%;
+    position: fixed;
+}
+.dot{
+    background-color: #2d2f3a;
+    border-radius: 100px;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    margin: 25px;
+    margin-bottom: 120px;
+    margin-left: 0px;
+  -webkit-transition: box-shadow .25s linear;
+  -moz-transition: box-shadow .25s linear;
+  -ms-transition: box-shadow .25s linear;
+  -o-transition: box-shadow .25s linear;
+   transition: box-shadow .25s linear;
+   transition-delay: 0.2s;
+}
+.nav-name{
+    margin-left: -95px;
+    color: #ffffff;
+    font-size: 10px;
+    font-family: cursive;
+    background: #174a87;
+    width: 90px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+#line{
+    height: 1px;
+    background: rgba(27, 13, 13, 0.4);
+    width: 5px;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    transition: height 1s;
+    transition: height 0.5s linear;
+    -moz-transition: height 0.5s linear; /* Firefox 4 */
+    -webkit-transition: height 0.5s linear; /* Safari and Chrome */
+    -o-transition: height 0.5s linear; /* Opera */
+    -ms-transition: height 0.5s linear; /* Explorer 10 */
+}
+
+
+
+.about,.portfolio{
+    visibility: hidden;
+    transition: visibility 0.1s linear;
+}
+
+.default{
+    background: #393f56;
+    box-shadow: 0px 0px 20px 5px #0043ff;
+}
+.current-pos{
+    background: #393f56;
+    box-shadow: 0px 0px 20px 5px #0043ff;
 }
