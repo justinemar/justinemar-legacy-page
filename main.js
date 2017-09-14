@@ -1,1 +1,24 @@
-$(document).ready(function(){$(this).scrollTop(0),$("button").click(function(){$(".msg-box").fadeOut()}),$(window).scroll(function(){console.log($(document).scrollTop()+" px"),700===$(window).scrollTop()||732===$(window).scrollTop()||707===$(window).scrollTop()?($("#line").height("165px"),console.log($(document).scrollTop()+" px"),$(".dot-about").addClass("current-pos"),$(".about").css("visibility","visible"),$(".top").css("visibility","hidden"),$(".dot-portfolio").removeClass("current-pos"),$(".portfolio").css("visibility","hidden")):0===$(window).scrollTop()||332===$(window).scrollTop()?(console.log($(document).scrollTop()+" px"),$("#line").height("1px"),$(".dot-about").removeClass("current-pos"),$(".dot-portfolio").removeClass("current-pos"),$(".about").css("visibility","hidden"),$(".top").css("visibility","visible"),$(".portfolio").css("visibility","hidden")):1e3!==$(window).scrollTop()&&1432!==$(window).scrollTop()||(console.log($(document).scrollTop()+" px"),$("#line").height("300px"),$(".dot-portfolio").addClass("current-pos"),$(".portfolio").css("visibility","visible"),$(".about").css("visibility","hidden"),$(".top").css("visibility","hidden"))}),$("a").on("click",function(o){if(""!==this.hash){o.preventDefault();var i=this.hash;$("html, body").animate({scrollTop:$(i).offset().top},800,function(){window.location.hash=i})}})});
+
+
+function cssEffect(pos,elem,aclass){
+    $(window).scroll(function(){
+        
+        if($(window).scrollTop() > pos){
+        $(elem).addClass(aclass);
+    }else{
+        $($(elem)).removeClass(aclass);
+    }
+    })
+}
+
+
+
+$(document).ready(function(){
+    $(this).scrollTop(0); // Force page to get on top when reload
+    $("button").click(function(){
+        $(".msg-box").fadeOut();
+    });
+    
+    cssEffect(300,".parallax-1","blur");
+
+});

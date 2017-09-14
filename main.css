@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,800|Lora:400italic|Playfair+Display:700);
 *{
     padding: 0;
     margin:0;
@@ -27,20 +28,60 @@ body{
 
 #main-header .parallax-1{
     opacity: 0.9;
-    height: 585px;
+    height: 580px;
     background-attachment: fixed;
-    background-image: url("parallax.jpg");
+    background-image: url("justin-cantado.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 .parallax-1 .caption-wrapper{
     width: 100%;
     height: 200px;
     position: absolute;
     text-align: center;
-    top: 350px;
+    top: 250px;
 
+}
+
+.parallax-1 .caption{
+    max-width: 550px;
+    z-index: 12;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    margin-top: -380px;
+}
+.caption-wrapper #caption-bg{
+    background: black;
+    max-width: 350px;
+    height: 370px;
+    z-index: 1;
+    left: 350px;
+    opacity: 0.8;
+    margin: 0 auto;
+}
+.caption h1{
+    font-family: 'Segoe UI';
+    color: #ffffff;
+}
+.caption > h1{
+    font-size: 95px;
+}
+.caption h1:nth-child(3){
+    font-size: 75px;
+}
+.highlight{
+    width: 100%;
+}
+.highlight h1{
+    background: #FFD800;
+    color: #ffffff;
+    font-family: Segoe UI;
+    max-width: 450px;
+    margin: 0 auto;
+    font-size: 100px;
 }
 .parallax-1 #caption{
     font-size: 50px;
@@ -52,28 +93,38 @@ body{
 }
 #main-section{
     padding: 35px;
+    background-color: #ffffff;
 }
 
 #main-section .about-me-wrapper, #main-section .portfolio-wrapper{
-    box-shadow: -1px 4px 13px 0px #989696;
     padding: 10px;
     background: #ffffff;
     height: 100%;
     margin-bottom: 25px;
+    color: silver;
+
+
 }
 
+#main-section .portfolio-wrapper{
+    padding: 0px;
+}
 
-.about-me-wrapper h1{
+.about-me-wrapper h1, .portfolio-wrapper > h1{
     text-align: center;
     font-size: 60px;
-    font-family: 'Segoe UI';
+    font-family: 'Raleway';
+    letter-spacing: 10px;
     font-weight: 100;
     font-variant: all-petite-caps;
+    background: #000000;
 }
 
-.about-me-p{
+.about-me-p, .portfolio-content{
    width: 100%;
    margin-top: 60px;
+   margin-bottom: 360px;
+   text-align: center;
 }
 .about-me-p p{
     width: 100%;
@@ -82,36 +133,42 @@ body{
     text-align: center;
     font-family: 'Segoe UI';
     margin: 0 auto;
-    margin-bottom: 360px;
+    color: #636363;
+}
+
+
+.box{
+    width: 370px;
+    display: inline-block;
 }
 
 .box-container{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 350px;
-}
-.box-work{
-    width: 230px;
+    width: 370px;
     height: 250px;
-display: inline-flex;
-}
-.box-details{
-    position: absolute;
-    margin-top: 150px;
-    color: white;
-    text-shadow: 1px 1px 9px black;
-    width: 220px;
-    font-size: 14px;
+    background: #dadada;
 }
 
-
-
-
+.box-title-container{
+    position: relative;
+    top: 165px;
+    padding: 10px;
+}
+.box-title-container h1{
+    color: #442323;
+    font-family: monospace;
+}
 button{
     padding: 15px;
     width: 100%;
     border: 0;
     background: white;
+}
+.full-width{
+    
+}
+
+.full-width .box-container{
+    
 }
 
 #q{
@@ -227,4 +284,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8c6df', end
 .current-pos{
     background: #393f56;
     box-shadow: 0px 0px 20px 5px #0043ff;
+}
+
+.blur{
+     -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+#left-navigation{
+    background: #404040;
+    height: 420px;
+    width: 75px;
+    position: fixed;
+    top: 195px;
+}
+.btn-nav{
+    transition: background 1s linear, border-bottom 1s linear;
+    padding: 5px;
+    margin-bottom: 55%;
+    height: 70px;
+}
+.btn-nav:hover{
+    background-color: #646464;
+    border-bottom: 1px solid #fdda17;
 }
