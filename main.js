@@ -61,8 +61,8 @@ var end = null;
 var interval = null;
 
 function handle(delta) {
-	var animationInterval = 20; //lower is faster
-  var scrollSpeed = 20; //lower is faster
+  var animationInterval = 11; //lower is faster
+  var scrollSpeed = 10; //lower is faster
 
 	if (end == null) {
   	end = $(window).scrollTop();

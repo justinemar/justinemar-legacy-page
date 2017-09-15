@@ -344,3 +344,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8c6df', end
     background-color: #646464;
     border-bottom: 1px solid #fdda17;
 }
+
+
+.fa-twitter,.fa-github,.fa-linkedin,.fa-wakatime{
+    color: #ffffff;
+    padding: 9px;
+    font-size: 35px !important;
+}
+.fa-wakatime{
+    font-weight: 900;
+    font-family: cursive;
+    padding: 5px;
+}
