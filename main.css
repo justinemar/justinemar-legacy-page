@@ -193,7 +193,7 @@ a{
 .work-3{
     background-image: url(./dithasfront.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 .box-title-container{
