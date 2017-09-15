@@ -168,30 +168,37 @@ a{
 }
 
 .box-container{
-    width: 370px;
-    height: 250px;
     background: #fbf9f9;
+    width: 370px;
+    height: 350px;
 }
 .box-container:hover{
-    border: 1px solid #e2e2e2;
+    outline: 1px solid #e2e2e2;
 }
-/*.work-1{
-    background: linear-gradient(to right, #4b6cb7, #6c9dff);
+
+.work-1{
+    background-image: url(./onboard1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 .work-2{
-    background: linear-gradient(to right, #7dffa5, #81cac7);
+    background-image: url(./profil1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 .work-3{
-    background: linear-gradient(to right, #f15e57, #ffddc0);
-}*/
+    
+}
 .box-title-container{
-    position: relative;
-    top: 165px;
+    top: 285px;
     padding: 10px;
-    right: 100px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.32);
 }
 .box-title-container h1{
-    color: #2b2b2b;
+    color: #ffffff;
     font-family: monospace;
 }
 button{
@@ -199,13 +206,6 @@ button{
     width: 100%;
     border: 0;
     background: white;
-}
-.full-width{
-    
-}
-
-.full-width .box-container{
-    
 }
 
 #q{
