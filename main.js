@@ -1,28 +1,39 @@
 
-
-function addclass_scroll(pos,elem,_class){
-    $(window).on('scroll',function(){
-    if($(window).scrollTop() > pos)
-        $(elem).addClass(_class);
-    else
-        $($(elem)).removeClass(_class);
-    });
+var effect_scroll = {
+    specificPos: function(pos,elem,_class){
+       $(window).on('scroll', function(){
+        if($(window).scrollTop() > pos)
+            $(elem).addClass(_class);
+        else
+            $($(elem)).removeClass(_class);
+       }); 
+    },
+    bottom: function(elem,speed){
+       $(window).on('scroll', function(){
+        if($(window).scrollTop() + $(window).height() === $(document).height()){
+            $(elem).show(speed);
+        }else{
+            $(elem).hide(speed);
+        }
+        });
+    }
 }
+
 
 
 
 $(document).ready(function(){
     $(this).scrollTop(0); // Force page to get on top when reload
-    $("button").click(function(){
-        $(".msg-box").fadeOut();
-    });
-    addclass_scroll(300,".parallax-1","blur");
-    addclass_scroll(235,".fake-header","nav-fixed")
+
+    /* call function */
+    effect_scroll.specificPos(300,".parallax-1","blur");
+    effect_scroll.specificPos(235,".fake-header","nav-fixed")
+    effect_scroll.bottom(".go-top", "fast")
     // Just a little fun
    var updateFollower = setInterval(function(){
          $(".count").first().text("1.2M");
     }, 500)
-    
+      // href smooth 
      $("a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
