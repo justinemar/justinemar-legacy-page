@@ -286,3 +286,7 @@ a{
     line-height: 69px;
     font-size: 50px;
 }
+
+.github-widget{
+    margin: 0 auto;
+}
