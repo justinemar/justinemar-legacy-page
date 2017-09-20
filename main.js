@@ -1,4 +1,3 @@
-
 var effect_scroll = {
     specificPos: function(pos,elem,_class){
        $(window).on('scroll', function(){
