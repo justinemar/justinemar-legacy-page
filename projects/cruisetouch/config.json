@@ -1,0 +1,252 @@
+{
+  "general": {
+    "userAgentAdd": "gonative",
+    "useWKWebView": true,
+    "enableWindowOpen": true,
+    "useCrosswalkWebView": false,
+    "forceScreenOrientation": null,
+    "initialUrl": "https://www.cruisetouch.com/Mobile",
+    "appName": "Cruisetouch"
+  },
+  "navigation": {
+    "androidPullToRefresh": true,
+    "iosPullToRefresh": true,
+    "androidShowRefreshButton": false,
+    "iosShowRefreshButton": false,
+    "deepLinkDomains": [],
+    "tabNavigation": {
+      "tabSelectionConfig": [
+        {
+          "id": "1",
+          "regex": ""
+        }
+      ],
+      "tabMenus": [
+        {
+          "id": "1",
+          "items": [
+            {
+              "icon": "fa-user",
+              "label": "Profile"
+            },
+            {
+              "label": "Reviews",
+              "icon": "fa-pencil"
+            },
+            {
+              "label": "Forums",
+              "icon": "fa-pencil-square-o"
+            },
+            {
+              "label": "Groups",
+              "icon": "fa-users"
+            },
+            {
+              "label": "Inbox",
+              "icon": "fa-envelope-o"
+            }
+          ]
+        }
+      ],
+      "active": true
+    },
+    "sidebarNavigation": {
+      "menus": [
+        {
+          "name": "default",
+          "items": null,
+          "active": true
+        },
+        {
+          "name": "loggedIn",
+          "items": null,
+          "active": false
+        }
+      ],
+      "menuSelectionConfig": {
+        "testURL": null,
+        "redirectLocations": [
+          {
+            "regex": null,
+            "menuName": "default",
+            "loggedIn": false
+          },
+          {
+            "regex": ".*",
+            "menuName": "default",
+            "loggedIn": true
+          }
+        ]
+      }
+    },
+    "navigationLevels": {
+      "levels": [
+        {}
+      ]
+    },
+    "navigationTitles": {
+      "titles": [
+        {}
+      ],
+      "active": false
+    },
+    "regexInternalExternal": {
+      "rules": [
+        {
+          "regex": "^(?!https?://).*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/login.php.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/dialog.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/v1\\.0/.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/oauth.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/v2\\.0/.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/checkpoint.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*plus\\.google\\.com/share.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*twitter\\.com/.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*instagram\\.com/.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://maps\\.google\\.com.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*linkedin\\.com/.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*google\\.com/maps/search/.*",
+          "internal": false
+        },
+        {
+          "regex": ".*",
+          "internal": true
+        }
+      ],
+      "active": false
+    },
+    "toolbarNavigation": null
+  },
+  "styling": {
+    "icon": "https://gonativeio.s3.amazonaws.com/uploads/j6w7x2rq5vn66_1501943142327.png",
+    "iosHeaderImage": "https://gonativeio.s3.amazonaws.com/uploads/fz3d4h7zt2x8m_1501943403591.png",
+    "showActionBar": true,
+    "showNavigationBar": true,
+    "iosSidebarFont": "Default",
+    "androidHideTitleInActionBar": false,
+    "navigationTitleImage": false,
+    "iosTheme": "light",
+    "androidTheme": "light",
+    "menuAnimationDuration": 0.15,
+    "transitionInteractiveDelayMax": 0.2,
+    "hideWebviewAlpha": 0.5,
+    "disableAnimations": false,
+    "androidShowSplash": true,
+    "androidSidebarBackgroundColor": "#3a3f53",
+    "androidSidebarForegroundColor": "#fffFFF",
+    "androidActionBarBackgroundColor": "#3a3f53",
+    "androidActionBarForegroundColor": "#fffFFF",
+    "androidPullToRefreshColor": "#3a3f53",
+    "androidAccentColor": "#3a3f53",
+    "androidSidebarSeparatorColor": "#fffFFF",
+    "androidTabBarBackgroundColor": "#3a3f53",
+    "androidTabBarTextColor": "#fffFFF",
+    "androidTabBarIndicatorColor": "#fffFFF",
+    "iosTitleColor": "#3a3f53",
+    "iosTintColor": "#3a3f53",
+    "iosSidebarTextColor": "#3a3f53",
+    "androidLaunchImages": {},
+    "iosLaunchImages": {},
+    "androidStatusBarBackgroundColor": "#3a3f53"
+  },
+  "forms": {
+    "search": {
+      "active": true,
+      "searchTemplateURL": "https://www.cruisetouch.com/search/?q="
+    },
+    "loginConfig": {
+      "formSelector": null,
+      "loginIsFirstPage": false
+    },
+    "signupConfig": {
+      "active": false,
+      "formSelector": null
+    }
+  },
+  "permissions": {
+    "usesGeolocation": true
+  },
+  "performance": {
+    "webviewPools": [
+      {
+        "urls": [
+          {
+            "disown": "reload"
+          }
+        ]
+      }
+    ]
+  },
+  "publishing": {},
+  "services": {
+    "push": {
+      "active": false
+    },
+    "analytics": {
+      "active": false
+    },
+    "parse": {
+      "active": false,
+      "pushEnabled": false
+    },
+    "facebook": {
+      "active": false
+    },
+    "oneSignal": {
+      "active": false
+    },
+    "registration": {
+      "active": false,
+      "endpoints": [
+        {
+          "url": null,
+          "urlRegex": null,
+          "dataType": [
+            "parse",
+            "oneSignal"
+          ]
+        }
+      ]
+    }
+  }
+}

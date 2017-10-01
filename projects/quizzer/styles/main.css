@@ -1,0 +1,29 @@
+*{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+div.container{
+    max-width: 550px;
+    text-align: center;
+    margin: 0 auto;
+}
+.info{
+    background: #FF7739;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    height:30px;
+}
+div#info-msg{
+    display: none;
+    background: red;
+    clear:both;
+}
+#question-wrapper{
+    background: #083A85;
+}
+legend{
+    color: #ff7609;
+}
+label{
+    color: #AAA3AD;
+}

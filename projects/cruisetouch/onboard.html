@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Cruisetouch</title>
+    <link rel="stylesheet" href="./resources/stylesheet/onboard.css" />
+    <script type="text/javascript" src="./scripts/main.js"></script>
+
+<!-- 
+
+***********************************
+[Instructions for future changes]
+***********************************
+
+-Adding new slides
+  * To add new slide create an img tag with id 'img++' 
+    e.g ( <img id="img4" src="image.png"/>)
+
+-Adding new slide position indicator
+  * Same with adding new slides. Simply create a new li tag with id 's++' 
+    e.g (<li id="s4"></li>) this is in index based 0,1,2,3,4,5... 
+-->
+
+</head>
+
+<body onload="Load()">
+    <div id="onboard">
+        <div id="slide-cards">
+    
+            <!-- here you have to add the img tag -->
+           
+            <div id="card-3" class="card"><h1 id="cardTitle">Ready, Set, Sail!</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. .</p>
+            <div class="continue"><a href="signup.html">Sign up</a></div>
+            <div class="continue"><a href="login.html">Log in</a></div>
+            </div>
+            <div id="card-2" class="card"><h1 id="cardTitle">YOUR PLANS</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. .</p></div>
+            <div id="card-1" class="card"><h1 id="cardTitle">WE GOT YOU!</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. .</p>
+            
+            </div>
+        </div>
+        <!--Here is going to be the left right buttons, the info and the imgs shown-->
+            <div id="slideNav">
+               <p id="left" onclick="prev()"><</p>
+               <p id="right" onclick="next()">></p>
+            </div>
+        <div id="frame">
+
+            <div id="slidePos-wrap">
+                <div id="slidePos-container">
+                    <ul id="slidePos">
+                        <li id="s0"></li>
+                        <li id="s1"></li>
+                        <li id="s2"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

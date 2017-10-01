@@ -1,0 +1,131 @@
+body{
+    font-family: 'Segoe UI','Sans-serif';
+
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+a{
+    text-decoration: underline;
+    color: #ffffff;
+}
+p{
+
+}
+
+#login-section{
+    height: 100vh;
+    top:0;
+    bottom:0;
+
+}
+.login-container{
+    height: 100%;
+}
+#banner{
+    position: absolute;
+    background: -webkit-linear-gradient(rgba(35,100,175,1) 0%, rgba(66,69,108,1) 0%, rgba(62,66,102,1) 43%, rgba(63,65,99,1) 57%, rgba(61,65,101,1) 99%, rgba(60,64,96,1) 100%);
+    background: -moz-linear-gradient(rgba(35,100,175,1) 0%, rgba(66,69,108,1) 0%, rgba(62,66,102,1) 43%, rgba(63,65,99,1) 57%, rgba(61,65,101,1) 99%, rgba(60,64,96,1) 100%);
+    background: -o-linear-gradient(rgba(35,100,175,1) 0%, rgba(66,69,108,1) 0%, rgba(62,66,102,1) 43%, rgba(63,65,99,1) 57%, rgba(61,65,101,1) 99%, rgba(60,64,96,1) 100%);
+    background: linear-gradient(rgba(35,100,175,1) 0%, rgba(66,69,108,1) 0%, rgba(62,66,102,1) 43%, rgba(63,65,99,1) 57%, rgba(61,65,101,1) 99%, rgba(60,64,96,1) 100%);
+    height: 100%;
+    width: 95%;
+    text-align: center;
+    transition: 2s;
+}
+#banner-content{
+    padding: 15px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#desc{
+  margin: 0 auto;
+  width: 280px;
+  color: #ffffff;
+
+}
+#signup-notice{
+    margin: 0 auto;
+    color: #ffffff;
+}
+#continue{
+    padding: 5px;
+    color: #f7f8ff;
+    border: 0;
+    width: 250px;
+    background: #30334B;
+    margin: 20px;
+}
+
+.main-login{
+    text-align: center;
+    height: 100%;
+    background-image: url("../../resources/images/norway.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.main-login h1{
+    font-size: 1.9em;
+    margin-top: 100px;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+.border{
+    border: 1px solid grey;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.17);
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 35px;
+    width: 90%;
+    height: 59%;
+}
+.form-box{
+    width: 230px;
+    margin: 0 auto;
+
+}
+.form-box h5{
+    margin-top: 50px;
+    padding: 15px;
+    font-size: 1.2em;
+    color: #ffffff;
+    font-weight: 400;
+}
+.form-box a{
+    font-size: smaller;
+    text-decoration: none;
+    float: right;
+    margin-top: 10px;
+    text-shadow: -1px 0px 4px black;
+
+}
+input[type="text"],input[type="password"]{
+    padding: 5px;
+    margin-top: 25px;
+    width: 100%;
+    height: 30px;
+    border:0;
+    border-radius: 5px;
+}
+
+
+input[type="submit"]{
+    margin-top: 25px;
+    padding: 5px;
+    width: 100%;
+    border: 0;
+    color: #ffffff;
+    background: #30334B;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+}

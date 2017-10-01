@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta author="Justine Cantado">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="./resources/stylesheet/profile.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    </head>
+    
+    
+    <body>
+        <header id="profile-header" class="cover">
+            <div id="profile-photo-wrap">
+                <img src="./resources/images/lauren-profile.png" />
+                </div>
+                <div class="profile-info-wrap">
+                    <h1 id="profile-user-name" class="info-inline">Lauren Reyes</h1>
+                    <div id="online-indicator" class="info-inline"></div>
+                <div class="profile-main-btn">
+                    <div id="add-friend-btn" class="left">Add Friend</div>
+                    <div id="send-msg-btn" class="right">Send Message</div>
+                </div>
+                
+                <div class="profile-tabs">
+                    <div id="friends-tab" class="tabs-inline active-tab">
+                        <h2 class="counter">134</h2>
+                        <h3 class="tab-name">Friends</h3>
+                    </div>
+                    <div id="groups-tab" class="tabs-inline">
+                        <h2 class="counter">18</h2>
+                        <h3 class="tab-name">Groups</h3>
+                    </div>
+                    <div id="reviews-tab" class="tabs-inline">
+                        <h2 class="counter">1.6K</h2>
+                        <h3 class="tab-name">Reviews</h3>
+                    </div>
+                    <div id="posts-tab" class="tabs-inline">
+                        <h2 class="counter">95</h2>
+                        <h3 class="tab-name">Posts</h3>
+                    </div>
+                </div>
+                </div>
+        </header>
+        
+        <section id="friend-tab-content">
+            
+            <form method="get" action="/search" id="searchBar-Container">
+            <input id="searchInput" name="q" type="text" size="40" placeholder="Search a name">
+            </form>
+    
+        <div class="friendTab-friends-list">
+         <div class="a-user-profile">
+            <div class="user-profile-photo-wrap">
+            <img style="float:left;margin-right: 10px;margin-left: 20px;"src="./resources/images/user-profile-comment-placeholder.png"./>
+            </div>
+            
+            <div class="friendTab-user-container">
+                <div class="friendTab-user-info">
+                    
+                <h3 id="friendTab-profile-name" style="word-wrap:break-word;">Cristina Villarica Miguel Rodriguez Amoroza</h3>
+                <div class="friendTab-profile-status">
+                <span id="friendTab-profile-friends-count">2334 Friends</span>
+                
+                <div class="friend-status a-friend">
+                <button>Friend</button>
+                </div>
+                </div>
+                </div>
+            </div>
+           <hr id="friendTab-linebreak">
+          </div>
+          
+           <div class="a-user-profile">
+            <div class="user-profile-photo-wrap">
+            <img style="float:left;margin-right: 10px;margin-left: 20px;"src="./resources/images/user-profile-comment-placeholder.png"./>
+            </div>
+            
+            <div class="friendTab-user-container">
+                <div class="friendTab-user-info">
+                    
+                <h3 id="friendTab-profile-name" style="word-wrap:break-word;">Kevin Korby</h3>
+                <div class="friendTab-profile-status">
+                <span id="friendTab-profile-friends-count">114 Friends</span>
+                
+                <div class="friend-status not-friend">
+                <button>Add Friend</button>
+                </div>
+                </div>
+                </div>
+            </div>
+           <hr id="friendTab-linebreak">
+          </div>
+        </div>
+        
+        
+</section>
+    </body>
+</html>
