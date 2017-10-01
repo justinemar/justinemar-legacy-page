@@ -1,3 +1,6 @@
+*{
+transition: all 1s linear;
+}
 body{
     background-color: #e83f3f;
 }
