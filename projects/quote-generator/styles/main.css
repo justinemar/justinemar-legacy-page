@@ -1,5 +1,9 @@
 *{
+<<<<<<< HEAD
     transition: all 1s linear;
+=======
+transition: all 1s linear;
+>>>>>>> 26b3c949df1f212b796068089d25285ff62d4cee
 }
 body{
     background-color: #e83f3f;
