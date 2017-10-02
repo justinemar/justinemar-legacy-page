@@ -1,0 +1,48 @@
+body{
+    background: #607782;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+.weather-widget-wrapper{
+    padding: 50px;
+}
+.weather-widget-contents{
+    text-align: center;
+}
+.app-name{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: monospace;
+    color: #006dcc;
+    background: white;
+}
+.status{
+    max-width: 100px;
+    margin: 0 auto;
+    font-size: 35px;
+    font-family: 'Segoe UI';
+    letter-spacing: 5px;
+    color: oldlace;
+    max-width: 100%;
+}
+.place{
+    font-size: 35px;
+    font-family: 'Segoe UI';
+    letter-spacing: 5px;
+    color: oldlace;
+    max-width: 100%;
+}
+
+#temunit:hover{
+    cursor: pointer;
+}
+
+#temunit{
+    color: #006dcc;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px #202121;
+}
