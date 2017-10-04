@@ -8,7 +8,7 @@ body{
     background-color: #ececec;
 }
 
-a{
+.fake-header a{
     text-decoration: none;
     color: black;
     font-family: "Syncopate";
@@ -71,7 +71,6 @@ a{
 
 .parallax-1 .caption{
     max-width: 550px;
-    z-index: 12;
     position: relative;
     top: 10px;
     margin: 0 auto;
@@ -107,14 +106,14 @@ a{
     margin: 0 auto;
     font-size: 100px;
 }
-.parallax-1 #caption{
+/*.parallax-1 #caption{
     font-size: 50px;
     color: #ffffff;
     vertical-align: middle;
     box-shadow: 0 0 black;
     font-family: bangers;
     margin: 0 auto;
-}
+}*/
 #main-section{
     padding: 35px;
     background-color: #ffffff;
@@ -161,7 +160,18 @@ a{
     margin: 0 auto;
     color: #636363;
 }
-
+#project-bg-1{
+    background-image: url(./onboard1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}.project-bg-overlay{
+    width: 100%;
+    height: 100%;
+}
 .project-box{
     max-width: 350px;
     max-height: 200px;
@@ -170,6 +180,10 @@ a{
     background: black;
     position: relative;
     display: inline-block;
+    margin: 5px;
+}
+.project-info:hover,.project-box:hover{
+    cursor: pointer;
 }
 .project-info{
     text-align: center;
@@ -178,23 +192,28 @@ a{
     position: absolute;
     height: 45%;
     bottom: 0;
-    border-bottom: 100px solid yellow;
+    border-bottom: 100px solid #fdda17;
     border-right: 100px solid transparent;
+
 }#project-name,#project-tech{
     float: left;
 }#project-tech{
     clear: both;
+    word-break: break-all;
 }.project-label{
-    width: 120px;
+    width: 200px;
     height: 100%;
-    position: absolute;
-    right: 0px;
 }#project-cat{
     font-size: 12px;
-    background: black;
+    background: #2f2f2f;
     padding: 5px;
+    width: 100%;
+    float: left;
 }
-
+#projecturl{
+    color: black;
+    font-variant: all-petite-caps;
+}
 
 .project-name-wrap{
     width: 100%;

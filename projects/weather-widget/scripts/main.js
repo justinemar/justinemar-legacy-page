@@ -40,7 +40,7 @@ function weather(lat, long,$city,$country,$temperature,$report,$icon,$unit) {
 function convert(temp, $unit,$temperature){
     $($unit).on('click', function(){
         if($(this).html() === "C"){
-        temp = (temp * 1.8) + 32;
+        temp = Math.round((temp * 1.8) + 32);
         $($temperature).html(temp + "°");
         $($unit).html("F");
         }else{

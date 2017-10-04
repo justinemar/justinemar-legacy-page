@@ -84,15 +84,18 @@ function checkAnswer(){
         }
     }
     $(currentScore).html("SCORE :" + score); // SHOW OUR SCORE//
-    answersArr = [];
+    answersArr = []
 }
 function validateAnswer() {
     var inputElem = $("input[name=answer]:checked"); //GET SELECTED ANSWER//
     if (inputElem.val() !== undefined) { //PROCEED//
-        answersArr.push(inputElem.val()); //LETS PUSH THE ANSWER TO OUR ARRAY //
+        answersArr.push(inputElem.val()); //LETS PUSH THE ANSWER TO OUR ARRAY //nn
         if (page >= 7) {
+            $("#question-wrapper, p").remove();
             $("#submit").css("display","block"); // LAST PAGE, CHECK ANSWER //
-            $("#navigate").css("display","none"); //HIDE NEXT BTN//
+            $(currentScore).show();
+            $("#navigate").hide(); //HIDE NEXT BTN//
+
         }
         else {
         page += 1; // INCREMENT OUR PAGE COUNT //

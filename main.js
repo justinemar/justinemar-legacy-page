@@ -15,6 +15,12 @@ var effect_scroll = {
             $(elem).hide(speed);
         }
         });
+    },
+    fade: function(pos,elem,speed){
+        $(window).on('scroll', function(){
+            if($(window).scrollTop() > pos)
+                 $(elem).fadeIn(speed);
+        });
     }
 }
 
@@ -22,16 +28,20 @@ var effect_scroll = {
 
 
 $(document).ready(function(){
+    var projectInfo = $(".project-info");
+    $(projectInfo).fadeOut();
     $(this).scrollTop(0); // Force page to get on top when reload
 
     /* call function */
     effect_scroll.specificPos(300,".parallax-1","blur");
-    effect_scroll.specificPos(235,".fake-header","nav-fixed")
-    effect_scroll.bottom(".go-top", "fast")
+    effect_scroll.specificPos(235,".fake-header","nav-fixed");
+    effect_scroll.bottom(".go-top", "fast");
+    effect_scroll.fade(930, projectInfo,2000);
     // Just a little fun
    var updateFollower = setInterval(function(){
          $(".count").first().text("1.2M");
     }, 500)
+    
       // href smooth 
      $("a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
@@ -71,7 +81,7 @@ var end = null;
 var interval = null;
 
 function handle(delta) {
-  var animationInterval = 11; //lower is faster
+  var animationInterval = 8; //lower is faster
   var scrollSpeed = 10; //lower is faster
 
 	if (end == null) {
