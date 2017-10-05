@@ -4,6 +4,7 @@
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 			<title>Random Quote Generator</title>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
 			<link rel="stylesheet" href="./styles/main.css" type="text/css" />
 			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			<script type="text/javascript" src="./scripts/main.js"></script>
@@ -13,7 +14,14 @@
 				<div class="container">
 					<div class="content-wrapper">
 						<div id="msg-box">
-							<p id="msg">My secret is being not terrible at a lot of things.</p>
+					
+							<p id="msg"><i class="fa fa-quote-left"> </i><span id="quote">My secret is being not terrible at a lot of things.</span></p>
+
+						</div>
+						<div id="share-box">
+								<a class="twitter-share-button" target="_blank" href="" title="Tweet this Quote">
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+								</a>
 						</div>
 					</div>
 					<button id="new-quote" class="btn">New quote</button>
