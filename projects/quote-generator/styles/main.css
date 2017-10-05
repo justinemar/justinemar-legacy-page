@@ -14,6 +14,7 @@ body{
 }
 .content-wrapper{
     width: 100%;
+    overflow: hidden;
 }
 #msg-box{
     position: relative;
@@ -28,8 +29,31 @@ body{
     border-radius: 10px;
     color: #ffffff !important;
     background-color: #e83f3f;
+}.btn:hover{
+    cursor: pointer;
+}
+.fa-quote-left{
+    margin-right: 10px;
 }
 #msg{
     padding: 15px;
     color: #e83f3f;
+    font-size: 22px;
+}
+#share-box{
+    width: 100%;
+}
+.twitter-share-button{
+    background: #e83f3f;
+    padding: 8px;
+    float: left;
+    position: relative;
+    bottom: 10px;
+    left: 25px;
+    border-radius: 10px;
+}
+.fa-twitter{
+    vertical-align: middle;
+    color: #ffffff;
+    font-size: 25px;
 }
