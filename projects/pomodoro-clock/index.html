@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>Pomodoro Clock</title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="./styles/main.css" type="text/css" />
+        <script type="text/javascript" src="./scripts/main.js"></script>
+    </head>
+    <body>
+        
+        <div class="clock-container">
+
+            <div class="clock-title">
+                <h1>Pomodoro Clock</h1>
+                <span>by jcan</span>
+            </div>
+            
+            <div class="control-wrapper">
+                <div id="break-setter">
+                    <h2>Break Length</h2>
+                    <div class="controllers">
+                        <button id="break-decrease">-</button>
+                        <span id="break-value">5</span>
+                        <button id="break-increase">+</button>
+                    </div>
+                </div>
+                
+                <div id="session-setter">
+                    <h2>Session Length</h2>
+                    <div class="controllers">
+                        <button id="session-decrease">-</button>
+                        <span id="session-value">25</span>
+                        <button id="session-increase">+</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="clock-ui">
+                <div id="currentTimer">
+                    SESSION
+                </div>
+                <div id="timeleft">
+                    25
+                </div>
+            </div>
+            
+            <div class="motivational-quote">
+                <span id="random-quote">Creativity is a habit. It’s not something that happens in the shower.</span>
+            </div>
+        </div>
+        
+    </body>
+</html>

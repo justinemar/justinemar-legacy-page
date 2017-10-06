@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+h1,h2,span{
+    color: #ffffff;
+   
+}h2{
+    font-weight: lighter;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+span{
+    font-size: 20px;
+    font-style: italic;
+}
+button{
+    border: 0px;
+    background: transparent;
+    margin: 10px;
+    color: #ffffff;
+    font-size: 30px;
+    font-style: italic;
+}
+body{
+    background-color: #E2E2E2;
+    font-family: 'Calibri Light';
+}
+
+.clock-container{
+    max-width: 500px;
+    height: 100%;
+    background-color: #70BCFF;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.clock-container .clock-title h1{
+    color: #ffffff;
+    font-weight: 100;
+    font-style: italic;
+    padding-top: 25px;
+}
+
+.control-wrapper{
+    margin: 45px;
+}#break-setter{
+    float: left;
+}#session-setter{
+    float: right;
+}
+
+#break-value,#session-value{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.clock-ui{
+    clear: both;
+    padding-top: 35px;
+    background: #ffffff;
+    height: 250px;
+    border-radius: 100%;
+    width: 281px;
+    margin: 0 auto;
+}#timeleft{
+    vertical-align: middle;
+    line-height: 154px;
+    font-size: 143px;
+    color: #70bcff;
+    font-weight: 900;
+    font-style: italic;
+}#currentTimer{
+    color: #70bcff;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bolder;
+    margin-left: 15px;
+}
+
+
+
+.motivational-quote{
+    padding: 25px;
+}
+#random-quote{
+    font-size: 15px;
+}
+
+
+
