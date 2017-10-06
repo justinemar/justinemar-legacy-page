@@ -1,13 +1,16 @@
 *{
     font-family: 'Gloria Hallelujah', cursive;
+    padding: 0px;
+    margin: 0px;
 }
+
 input{
     margin: 10px;
 }
 div.container{
-
     text-align: center;
     margin: 0 auto;
+    padding: 20px;
 }
 .quiz-box{
     background: #083A85;
@@ -43,4 +46,9 @@ label{
     color: #f1f100;
     width: 250px;
     font-size: 19px;
+}
+.summary{
+    background: #1c61cc;
+    width: 100%;
+    height: 550px;
 }
