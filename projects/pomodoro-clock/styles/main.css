@@ -65,10 +65,13 @@ body{
     border-radius: 100%;
     width: 281px;
     margin: 0 auto;
+}.clock-ui:hover{
+    cursor: pointer;   
+    
 }#timeleft{
     vertical-align: middle;
     line-height: 154px;
-    font-size: 143px;
+    font-size: 100px;
     color: #70bcff;
     font-weight: 900;
     font-style: italic;
