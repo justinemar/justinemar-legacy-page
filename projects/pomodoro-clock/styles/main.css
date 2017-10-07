@@ -27,7 +27,12 @@ body{
     background-color: #E2E2E2;
     font-family: 'Calibri Light';
 }
-
+.msg-box h1{
+    font-size: 12px;
+    font-family: 'Segoe UI';
+    padding: 10px;
+    font-weight: lighter;
+}
 .clock-container{
     max-width: 500px;
     height: 100%;
