@@ -8,7 +8,7 @@ Still a messy code , will try to test my refactoring skills again
     
     
 var breakVal = 5; //The break length
-var sessionVal = 25; //The session length
+var sessionVal = 1; //The session length
 var timeLeft = 0;
 var counter = 0;
 var isPause = false;
@@ -56,17 +56,30 @@ function timer(){
           }
       }
   }
-  
-
-
-
-  
-  
-
-  
 }
 
 
+$(".session-increase").on('click', function(e) {
+    e.preventDefault();
+    if($(this).parent().parent("#session-setter") && onSession){
+        sessionVal+=1;
+        counter =0;
+        $(this).parent().children("#session-value").html(sessionVal);
+    }else{
+        alert("error");
+    }
+})
+
+$(".break-increase").on('click', function(e) {
+    e.preventDefault();
+    if($(this).parent().parent("#break-setter") ){
+        breakVal+=1;
+        if(!onSession){
+        counter =0;
+        }
+        $(this).parent().children("#break-value").html(breakVal);
+    }
+})
 
 $(".clock-ui").on('click', function(e){
     e.preventDefault();
@@ -78,26 +91,10 @@ $(".clock-ui").on('click', function(e){
 })
 
 
-    $(".increase").on('click', function(e){
-        e.preventDefault();
-    if(isPause){
-        if($(this).parent(".session-controllers")){
-            sessionVal +=1;
-            $(this).parent().children("#session-value").html(sessionVal);
-        }else if($(this).parent(".break-controllers")){
-            breakVal +=1;
-            $(this).parent().children("#break-value").html(breakVal);
-        }
-    }else{
-        alert("Pause the timer before changing time length!");
-    }
-    
-    })
-
-
 })
 
-
+  
+      
 
 
 
