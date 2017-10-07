@@ -8,7 +8,7 @@ Still a messy code , will try to test my refactoring skills again
     
     
 var breakVal = 5; //The break length
-var sessionVal = 1; //The session length
+var sessionVal = 25; //The session length
 var timeLeft = 0;
 var counter = 0;
 var isPause = false;
