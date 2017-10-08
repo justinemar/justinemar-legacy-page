@@ -59,27 +59,37 @@ function timer(){
 }
 
 
-$(".session-increase").on('click', function(e) {
+$(".increase").on('click', function(e) {
     e.preventDefault();
-    if($(this).parent().parent("#session-setter") && onSession){
+    if($(this).parent().is(".session-controllers") && onSession){
         sessionVal+=1;
         counter =0;
-        $(this).parent().children("#session-value").html(sessionVal);
-    }else{
-        alert("error");
+        $("#session-value").html(sessionVal);
+    }else if($(this).parent().is(".break-controllers")){
+        breakVal+=1; //allows change on value even on session to make changes visible to users
+        if(!onSession){ //but only reset clock if not on session
+        counter =0;
+        }
+        $("#break-value").html(breakVal);
     }
 })
 
-$(".break-increase").on('click', function(e) {
+$(".decrease").on('click', function(e) {
     e.preventDefault();
-    if($(this).parent().parent("#break-setter") ){
-        breakVal+=1;
+    if($(this).parent().is(".session-controllers") && onSession){
+        sessionVal-=1;
+        counter =0;
+        $("#session-value").html(sessionVal);
+    }else if($(this).parent().is(".break-controllers")){
+        breakVal-=1;
         if(!onSession){
         counter =0;
         }
-        $(this).parent().children("#break-value").html(breakVal);
+        $("#break-value").html(breakVal);
     }
 })
+
+
 
 $(".clock-ui").on('click', function(e){
     e.preventDefault();
@@ -96,7 +106,26 @@ $(".clock-ui").on('click', function(e){
   
       
 
-
+var getQuote = setInterval(function(){
+    $.ajax( {
+      url: 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+      success: function(data) {
+        var post = data.shift(); // The data is an array of posts. Grab the first one.
+        post.content = post.content.slice(3, -5);
+        $('#random-quote').hide().html(post.content).fadeIn("slow");
+        //var twitterBtn = $(".twitter-share-button"); future use
+        var url = "https://twitter.com/intent/tweet?text=" + $('#random-quote').text();
+        //twitterBtn.attr('href', url); future use
+        // If the Source is available, use it. Otherwise hide it.
+        if (typeof post.custom_meta !== 'undefined' && typeof post.custom_meta.Source !== 'undefined') {
+          $('#quote-source').html('Source:' + post.custom_meta.Source);
+        } else {
+          $('#quote-source').text('');
+        }
+      },
+      cache: false
+    });
+},7000)
 
 
 
