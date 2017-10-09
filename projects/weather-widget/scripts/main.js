@@ -9,6 +9,8 @@ var $unit = $("#temunit");
 var $humid = $("#humidity");
 var $wind = $("#wind");
 
+
+
     if (navigator.geolocation) {
         var lat;
         var long;
@@ -16,6 +18,7 @@ var $wind = $("#wind");
             lat = position.coords.latitude;
             long = position.coords.longitude;
             weather(lat, long); //Call function if navigator is available//
+            $('body').css("visibility","visible");
         });
     }else{
         alert("Your browser doesn't support navigation");
@@ -32,6 +35,9 @@ function weather(lat, long) {
         $($icon).attr("src", data.weather[0].icon);
         $($humid).html("Humidity: "+data.main.humidity + "%");
         $($wind).html("Wind: "+Math.round(data.wind.speed) + " km/h" )
+        $(".location").css("font-size","3em");
+        $(".main-status").css("min-height","404px");
+        $(".weather-status").css("margin-left","68px");
         convert(data.main.temp,$temperature)
     });
     

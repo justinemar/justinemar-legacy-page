@@ -1,11 +1,13 @@
 body{
     background: #FF8266;
     font-family: 'Calibri Light';
+    visibility: hidden;
 }
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: content-box;
+    transition: all 1s linear;
 }
 
 .container{
@@ -14,14 +16,14 @@ body{
 .main-status{
     background: #303030;
     max-width: 100%;
-    min-height: 404px;
+    min-height: 280px;
     border-radius: 250px;
     float: left;
 }
 .location{
     color: #ffffff;
     font-weight: 900;
-    font-size: 3em;
+    font-size: 2em;
     padding: 75px;
 }
 
@@ -36,7 +38,7 @@ body{
     width: 131px;
     border-radius: 10px;
     padding: 10px;
-    margin-left: 68px;
+    margin-left: -183px;
 }
 #temp{
     font-size: 60px;
@@ -44,7 +46,7 @@ body{
     color: #303030;
 }
 #temunit{
-    font-size: 35px;
+    font-size: 56px;
     color: #0094FF;
     font-weight: 800;
 }#temunit:hover{
@@ -54,9 +56,12 @@ body{
 
 .more-info{
     max-width: 133px;
+    color: #00fdff;
     height: 100px;
     position: absolute;
-    background: rgba(255, 255, 255, 0.49);
+    background-color: grey;
+    background: rgb(107, 99, 99);
+    background: rgba(2, 2, 2, 0.49);
     padding: 10px;
     font-family: 'Calibri Light';
     border-radius: 10px;
@@ -67,15 +72,18 @@ body{
     margin: 5px;
 
 }
-
+#hint-box{
+    color: antiquewhite;
+    font-size: 13px;
+}
 
 @media only screen and (max-width: 500px){
         .main-status{
-        min-height: 0px;
-        height: 249px;
+        min-height: 0px !important;
+        height: 249px !important;
         }
         .location{
-        font-size: 31px;
+        font-size: 31px !important;
         padding: 45px;
         }
         .weather-desc{
@@ -93,11 +101,14 @@ body{
         }
         .weather-status{
         height: 38px;
-        margin-left: 41px;
+        margin-left: 41px !Important;
         position: relative;
         top: -43px;
         }
         #temp{
         font-size: 33px;
+        }
+        #temunit{
+        font-size: 31px;
         }
 }
