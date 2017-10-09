@@ -1,5 +1,6 @@
 body{
-    background: #607782;
+    background: #FF8266;
+    font-family: 'Calibri Light';
 }
 *{
     margin: 0px;
@@ -7,42 +8,96 @@ body{
     box-sizing: content-box;
 }
 
-.weather-widget-wrapper{
-    padding: 50px;
+.container{
+        padding: 35px;
 }
-.weather-widget-contents{
-    text-align: center;
-}
-.app-name{
-    font-size: 30px;
-    font-weight: 700;
-    font-family: monospace;
-    color: #006dcc;
-    background: white;
-}
-.status{
-    max-width: 100px;
-    margin: 0 auto;
-    font-size: 35px;
-    font-family: 'Segoe UI';
-    letter-spacing: 5px;
-    color: oldlace;
+.main-status{
+    background: #303030;
     max-width: 100%;
+    min-height: 404px;
+    border-radius: 250px;
+    float: left;
 }
-.place{
-    font-size: 35px;
-    font-family: 'Segoe UI';
-    letter-spacing: 5px;
-    color: oldlace;
-    max-width: 100%;
+.location{
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 3em;
+    padding: 75px;
 }
 
-#temunit:hover{
+#desc{
+    color: #ffffff;
+    font-size: 35px;
+    margin-left: 70px;
+}
+.weather-status{
+    background: #ffffff;
+    height: 61px;
+    width: 131px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 68px;
+}
+#temp{
+    font-size: 60px;
+    font-weight: 900;
+    color: #303030;
+}
+#temunit{
+    font-size: 35px;
+    color: #0094FF;
+    font-weight: 800;
+}#temunit:hover{
     cursor: pointer;
 }
 
-#temunit{
-    color: #006dcc;
-    font-weight: bolder;
-    text-shadow: 1px 1px 1px #202121;
+
+.more-info{
+    max-width: 133px;
+    height: 100px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.49);
+    padding: 10px;
+    font-family: 'Calibri Light';
+    border-radius: 10px;
+    font-size: 19px;
+    margin-left: 450px;
+}
+#humidity,#wind{
+    margin: 5px;
+
+}
+
+
+@media only screen and (max-width: 500px){
+        .main-status{
+        min-height: 0px;
+        height: 249px;
+        }
+        .location{
+        font-size: 31px;
+        padding: 45px;
+        }
+        .weather-desc{
+        position: relative;
+        top: -45px;
+        }
+        .more-info {
+        margin-left: 0px;
+        top: 185px;
+        left: 44px;
+        }
+        #desc{
+        font-size: 28px;
+        margin-left: 38px;
+        }
+        .weather-status{
+        height: 38px;
+        margin-left: 41px;
+        position: relative;
+        top: -43px;
+        }
+        #temp{
+        font-size: 33px;
+        }
 }

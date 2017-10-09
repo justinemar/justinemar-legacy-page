@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 var $city = $("#city");
 var $country = $("#country");
@@ -5,24 +6,23 @@ var $temperature = $("#temp");
 var $report = $("#desc");
 var $icon = $("#icon");
 var $unit = $("#temunit");
+var $humid = $("#humidity");
+var $wind = $("#wind");
+
     if (navigator.geolocation) {
         var lat;
         var long;
         navigator.geolocation.getCurrentPosition(function(position) {
             lat = position.coords.latitude;
             long = position.coords.longitude;
-            weather(lat, long,$city,$country,$temperature,$report,$icon,$unit); //Call function if navigator is available//
+            weather(lat, long); //Call function if navigator is available//
         });
     }else{
         alert("Your browser doesn't support navigation");
     }
     
 
-
-});
-
-
-function weather(lat, long,$city,$country,$temperature,$report,$icon,$unit) {
+function weather(lat, long) {
     let api = "https://fcc-weather-api.glitch.me/api/current?lat=" + lat + "&" + "lon=" + long;
     $.getJSON(api, function(data) {
         $($city).html(data.name + ", ");
@@ -30,14 +30,16 @@ function weather(lat, long,$city,$country,$temperature,$report,$icon,$unit) {
         $($temperature).html(data.main.temp + "°")
         $($report).html(data.weather[0].description);
         $($icon).attr("src", data.weather[0].icon);
-        convert(data.main.temp,$unit,$temperature)
+        $($humid).html("Humidity: "+data.main.humidity + "%");
+        $($wind).html("Wind: "+Math.round(data.wind.speed) + " km/h" )
+        convert(data.main.temp,$temperature)
     });
     
 
 }
 
 
-function convert(temp, $unit,$temperature){
+function convert(temp,$temperature){
     $($unit).on('click', function(){
         if($(this).html() === "C"){
         temp = Math.round((temp * 1.8) + 32);
@@ -50,3 +52,6 @@ function convert(temp, $unit,$temperature){
         }
 })
 }
+});
+
+
