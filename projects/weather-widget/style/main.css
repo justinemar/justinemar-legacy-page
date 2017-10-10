@@ -11,20 +11,21 @@ body{
 }
 
 .container{
-        padding: 35px;
+    margin-top: 125px;
 }
 .main-status{
     background: #303030;
-    max-width: 100%;
+    max-width: 395px;
     min-height: 280px;
-    border-radius: 250px;
-    float: left;
+    margin: 0 auto;
+
 }
 .location{
     color: #ffffff;
     font-weight: 900;
     font-size: 2em;
-    padding: 75px;
+    padding: 20px;
+    margin: 10px;
 }
 
 #desc{
@@ -63,7 +64,6 @@ body{
     background: rgb(107, 99, 99);
     background: rgba(2, 2, 2, 0.49);
     padding: 10px;
-    font-family: 'Calibri Light';
     border-radius: 10px;
     font-size: 19px;
     margin-left: 450px;
@@ -77,7 +77,7 @@ body{
     font-size: 13px;
 }
 
-@media only screen and (max-width: 500px){
+/*@media only screen and (max-width: 500px){
         .main-status{
         min-height: 0px !important;
         height: 249px !important;
@@ -111,4 +111,4 @@ body{
         #temunit{
         font-size: 31px;
         }
-}
+}*/
