@@ -1,0 +1,64 @@
+/* Game start ui */
+*{
+    outline: none; /* hate it especially on cta's*/
+    box-sizing: content-box;
+}
+body{
+    font-family: 'Comic Sans MS';
+    background: #334d63;
+}
+.container{
+    max-width: 664px;
+    margin: 0 auto;
+}
+.game-ui-box{
+    background-color: #477EFF;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.game-title{
+    color: #FFCD91;
+    font-size: 28px;
+    padding: 20px;
+}
+.game-intro #play-game{
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 44px;
+    font-family: 'Comic Sans MS';
+}
+.shapes-animated{
+    margin: 15px;
+    overflow: hidden;
+}
+.shapes-animated .shape{
+    display: inline-block;
+    margin: 20px;
+}
+.shapes-animated .circle{
+    background: #FF9E66;
+    width: 113px;
+    height: 113px;
+    border-radius: 100px;
+    position: relative;
+    top: -500px;
+    transition: all 1s linear;
+}
+.shapes-animated .parallelogram{
+    width: 113px;
+    height: 113px;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    background: #3DFF7D;
+}
+.shapes-animated .square{
+    background: #E4FF70;
+    width: 113px;
+    height: 113px;
+    position: relative;
+    right: -399px;
+    transition: all 1s cubic-bezier(0, 0, 1, 0.11);
+}
