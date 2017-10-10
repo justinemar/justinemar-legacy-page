@@ -166,7 +166,7 @@ body{
     max-height: 450px;
     height: 450px;
 }.project-info-box{
-    max-width: 600px;
+    max-width: 590px;
     text-align: center;
     float: right;
     padding: 10px;
@@ -221,13 +221,13 @@ body{
     height: 100%;
 }
 .project-box{
-    max-width: 590px;
-    text-align: center;
-    float: right;
-    padding: 10px;
-    color: #4c4c4c;
-    font-family: 'Segoe UI';
-    font-size: 17px;
+    max-width: 350px;
+    max-height: 400px;
+    /* height: 350px; */
+    background: #e8e8e8;
+    position: relative;
+    display: inline-block;
+    margin: 5px;
 }
 .project-info:hover,.project-box:hover{
     cursor: pointer;
