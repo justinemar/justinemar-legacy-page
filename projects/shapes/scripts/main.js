@@ -27,7 +27,7 @@ $(document).ready(function(){
         var shape = $(ui.helper).clone();
         shape.draggable({
             containment: workspace,
-            stack: toolContent,
+            stack: '.tool-content',
             snap: true,
             snapMode: 'outer',
             snapTolerance: 13,
