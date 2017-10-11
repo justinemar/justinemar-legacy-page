@@ -28,15 +28,12 @@ var effect_scroll = {
 
 
 $(document).ready(function(){
-    var projectInfo = $(".project-info");
-    $(projectInfo).fadeOut();
     $(this).scrollTop(0); // Force page to get on top when reload
-
+    $(".fake-header").fadeOut();
     /* call function */
     effect_scroll.specificPos(300,".parallax-1","blur");
-    effect_scroll.specificPos(235,".fake-header","nav-fixed");
+    effect_scroll.fade(235,".fake-header","slow");
     effect_scroll.bottom(".go-top", "fast");
-    effect_scroll.fade(930, projectInfo,2000);
     // Just a little fun
    var updateFollower = setInterval(function(){
          $(".count").first().text("1.2M");
