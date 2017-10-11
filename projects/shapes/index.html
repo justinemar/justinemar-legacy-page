@@ -20,9 +20,9 @@
                             <button id="play-game">Play!</button>
                         </div>
                         <div class="shapes-animated">
-                            <div class="shape circle"></div>
-                            <div class="shape parallelogram"></div>
-                            <div class="shape square"></div>
+                            <div class="shape" id="circle"></div>
+                            <div class="shape" id="parallelogram"></div>
+                            <div class="shape" id="square"></div>
                         </div>
                     </div>
                 </div>
@@ -30,14 +30,35 @@
                 
                 <!--- Main game UI -->
                 <div class="game-main-ui">
+                    <div class="game-logo">Shapes</div>
                     <div class="tool-box">
                         <div class="toolbox-head">
                             <h1>Toolbox</h1>
+                            <div class="search-bar">
+                                <input id="searchbar" type="text" value="search shapes.."/>
+                            </div>
                         </div>
                         <div class="toolbox-contents">
-                            <div class="circle"></div>
+                            <div class="circle tool-content"></div>
+                            <div class="square tool-content"></div>
+                            <div class="triangle-up tool-content"></div>
+                            <div class="trapezoid tool-content"></div>
+                            <div class="parallelogram tool-content"></div>
+                            <div class="diamond tool-content"></div>
+                            <div class="triangle-topright tool-content"></div>
+                            <div class="triangle-topleft tool-content"></div>
+                            <div class="triangle-bottomleft tool-content"></div>
+                            <div class="triangle-bottomright tool-content"></div>
+                            
                         </div>
                     </div>
+                    <div class="clearfix"></div>
+                    <div class="workspace">
+                        <div class="instruction">
+                            THIS IS YOUR WORKSPACE DRAG SOME SOME SHAPES HERE
+                        </div>
+                    </div>
+                    <div class="clear-left"></div>
                 </div>
                 
                 

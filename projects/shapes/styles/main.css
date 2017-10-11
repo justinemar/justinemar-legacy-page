@@ -8,13 +8,15 @@ body{
     background: #334d63;
 }
 .container{
-    max-width: 664px;
+    max-width: 940px;
     margin: 0 auto;
+    height: 100%;
 }
 .game-ui-box{
-    background-color: #477EFF;
-    height: 100%;
+    background-color: #0094FF;
+     height: 100%;
     width: 100%;
+    padding: 10px;
     text-align: center;
 }
 .game-title{
@@ -37,7 +39,7 @@ body{
     display: inline-block;
     margin: 20px;
 }
-.shapes-animated .circle{
+.shapes-animated #circle{
     background: #FF9E66;
     width: 113px;
     height: 113px;
@@ -46,7 +48,7 @@ body{
     top: -500px;
     transition: all 1s linear;
 }
-.shapes-animated .parallelogram{
+.shapes-animated #parallelogram{
     width: 113px;
     height: 113px;
     -webkit-transform: skew(20deg);
@@ -54,11 +56,159 @@ body{
     -o-transform: skew(20deg);
     background: #3DFF7D;
 }
-.shapes-animated .square{
+.shapes-animated #square{
     background: #E4FF70;
     width: 113px;
     height: 113px;
     position: relative;
     right: -399px;
     transition: all 1s cubic-bezier(0, 0, 1, 0.11);
+}
+
+.game-main-ui{
+    visibility: hidden;
+    transition:all 1s linear;
+}
+.game-logo{
+    color: #FFD800;
+    float: right;
+    padding: 10px;
+    margin: 10px;
+    font-size: 33px;
+}
+
+.tool-box{
+    max-width: 214px;
+    height: 100%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    float: left;
+    clear:right;
+}
+.toolbox-head{
+        color: #716d67;
+}
+#searchbar{
+    border-radius: 10px;
+    border: 1px solid #DBDBDB;
+    padding: 5px;
+    color: orange;
+    text-align: center;
+}
+
+.toolbox-contents{
+    height: 100%;
+    width: 100%;
+}
+.tool-content{
+    display: inline-block;
+    margin:10px;
+}.tool-content:hover{
+    cursor:pointer;
+}
+
+.circle{
+    background: #FF6A00;
+    width: 85px;
+    height: 85px;
+    border-radius: 100px;
+    position: relative;
+}
+
+.square{
+    background: #FF6A00;
+    width: 85px;
+    height: 85px;
+    position: relative;
+
+}
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #4CFF00;
+}
+
+.trapezoid {
+	border-bottom: 100px solid #4CFF00;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width:30px;
+}
+
+.parallelogram{
+    width: 85px;
+    height: 85px;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    background: #0094FF;
+}
+
+.triangle-bottomleft {
+	width: 0;
+	height: 0;
+	border-bottom: 85px solid orange;
+	border-right: 85px solid transparent;
+}
+.triangle-topright {
+	width: 0;
+	height: 0;
+	border-top: 100px solid #B200FF;
+	border-left: 100px solid transparent;
+
+}
+
+.triangle-topleft {
+	width: 0;
+	height: 0;
+	border-top: 100px solid #B200FF;
+	border-right: 100px solid transparent;
+}
+	
+.triangle-bottomright {
+	width: 0;
+	height: 0;
+	border-bottom: 85px solid orange;
+	border-left: 85px solid transparent;
+}
+.diamond {
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom-color: #0094FF;
+	position: relative;
+	top: -50px;
+}
+.diamond:after {
+	content: '';
+	position: absolute;
+	left: -50px;
+	top: 50px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top-color: #0094FF;
+}
+.clearfix{
+    clear:right;
+}
+.clear-left{
+    clear:left;
+}
+.workspace{
+    background: #ffffff;
+    height: 600px;
+    display: inline-block;
+    width: 76%;
+}
+
+.instruction{
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: 170px;
+    opacity: 0.3;
+    font-size: 25px;
 }
