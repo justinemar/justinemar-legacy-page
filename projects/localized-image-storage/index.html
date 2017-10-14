@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Localized Image Storage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+        <script type="text/javascript" src="script.js"></script>
+        
+        <style>
+            .header{
+                padding: 25px;
+                text-align: center;
+                border-bottom: 1px solid #d0d0d0;
+            }
+            .images-container{
+                clear: left;
+            }
+            img{
+                border: 1px solid #ECEDE8;
+                margin: 10px 10px;
+                overflow: hidden;
+                height: 140px;
+                vertical-align: top;
+                padding: 5px;
+            }img:hover{
+                outline: 1px solid orange;
+            }
+            #imageName, #ImageUrl{
+                border-radius: 20px;
+                padding: 5px;
+                float: left;
+                margin: 5px;
+                outline: 0px;
+            }#ImageUrl{
+                width: 230px;
+            }
+            #createImage{
+                padding: 5px;
+                border: 0;
+                background: #ff8f00;
+                color: #ffffff;
+                float: left;
+                font-weight: bold;
+                margin: 5px;
+                outline: 0px;
+            }
+            .logo-wrapper{
+                
+            }.logo-wrapper img{
+                float: left;
+                width: 299px;
+                height: 110px;
+                padding: 0px;
+                border: 0px;
+                margin: 0px;
+            }
+     
+        </style>
+    </head>
+    
+    <body>
+        
+        <div class="header">
+        <div class="logo-wrapper">
+        <img src="locallized-image-storage.png" id="localized-logo"/>
+        </div>
+        <div style="clear:left;"></div>
+        <input id="imageName" type="text" value="" placeholder="name it or i will..">
+        <input id="ImageUrl" type="text" value="" placeholder="drag or paste a valid image url here">
+        <button id="createImage">Upload</button>
+        <div style="clear:left;"></div>
+        </div>
+        <div class="images-container">
+           
+        </div>
+    </body>
+</html>

@@ -18,8 +18,11 @@ var effect_scroll = {
     },
     fade: function(pos,elem,speed){
         $(window).on('scroll', function(){
-            if($(window).scrollTop() > pos)
+            if($(window).scrollTop() > pos){
                  $(elem).fadeIn(speed);
+            } else {
+                $(elem).fadeOut(speed);
+            }
         });
     }
 }
