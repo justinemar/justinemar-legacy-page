@@ -13,6 +13,7 @@ var timeLeft = 0;
 var counter = 0;
 var isPause = false;
 var onSession = true;
+var audio = new Audio('78506__joedeshon__desk-bell-one-time-01.wav');
 
 
 
@@ -27,7 +28,7 @@ function toMinute(s){
   if(sec < 10){
       return min + ":" + "0" + sec;
   }else{
-  return min + ":" + sec;
+      return min + ":" + sec;
   }
 }
 
@@ -41,6 +42,7 @@ function timer(){
           $($timeLeft).html(toMinute(timeLeft - counter));
           if(counter === timeLeft){
               counter = 0;
+              audio.play();
               onSession = false;
           }
       }
@@ -52,6 +54,7 @@ function timer(){
           $($timeLeft).html(toMinute(timeLeft - counter));
           if(counter === timeLeft){
               counter = 0;
+              audio.play();
               onSession = true;
           }
       }
@@ -103,8 +106,7 @@ $(".clock-ui").on('click', function(e){
 
 })
 
-  
-      
+
 
 var getQuote = setInterval(function(){
     $.ajax( {
