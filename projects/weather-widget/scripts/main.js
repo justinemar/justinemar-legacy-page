@@ -9,23 +9,25 @@ var $unit = $("#temunit");
 var $humid = $("#humidity");
 var $wind = $("#wind");
 
-
+var options = {
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 600000
+};
 
     if (navigator.geolocation) {
-        var lat;
-        var long;
-        navigator.geolocation.getCurrentPosition(function(position) {
-            lat = position.coords.latitude;
-            long = position.coords.longitude;
-            weather(lat, long); //Call function if navigator is available//
-            $('body').css("visibility","visible");
-        });
+navigator.geolocation.getCurrentPosition(
+weather,errorGettingPosition,
+options);
+     $('body').css("visibility","visible");
     }else{
         alert("Your browser doesn't support navigation");
     }
     
 
-function weather(lat, long) {
+function weather(pos) {
+    var lat = pos.coords.latitude;
+    var long = pos.coords.longitude;
     let api = "https://fcc-weather-api.glitch.me/api/current?lat=" + lat + "&" + "lon=" + long;
     $.getJSON(api, function(data) {
         $($city).html(data.name + ", ");
@@ -57,6 +59,27 @@ function convert(temp,$temperature){
         $($unit).html("C");
         }
 })
+}
+
+
+function errorGettingPosition(err)
+{
+	if(err.code==1)
+	{
+		alert("User denied geolocation.");
+	}
+	else if(err.code==2)
+	{
+		alert("Position unavailable.");
+	}
+	else if(err.code==3)
+	{
+		alert("Timeout expired.");
+	}
+	else
+	{
+		alert("ERROR:"+ err.message);
+	}
 }
 });
 
