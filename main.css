@@ -279,3 +279,8 @@ body{
 .github-widget{
     margin: 0 auto;
 }
+
+figure{
+    max-width: 700px;
+    margin: 0 auto;
+}
