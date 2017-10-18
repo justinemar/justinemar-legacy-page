@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-
+let container;
 
 function saveImages(name, value) {
     if (typeof(Storage) !== undefined) {
@@ -11,29 +11,25 @@ function saveImages(name, value) {
 }
 
 function loadStorage() {
-    const container = $(".images-container");
     let elem;
     var keys = Object.keys(localStorage),
         i = 0,
         key;
     for (; key = keys[i]; i++) {
-        elem = "<img src='' " + "id='" + key + "' />";
-        $(container).append(elem);
-        let thisImg = document.getElementById(key);
         let source = localStorage.getItem(key);
-        $(thisImg).attr('src', source);
+        elem = $('<img>', {"id": key, "src": source});
+        container.append(elem);
     }
 }
 
 $(function() {
     "use strict";
-    loadStorage();
     const create_btn = $("#createImage");
     const save_btn = $("#saveImages");
     const inputUrl = $("#ImageUrl");
     const inputName = $("#imageName");
-    const container = $(".images-container");
-
+    container = $(".images-container");
+    loadStorage();
 
     var createThisImage = function(name, url) {
         if ((name === "" && url === "") || (url === "")) {
@@ -82,7 +78,6 @@ $(function() {
         let thisImg = document.getElementById(id);
         thisImg.src = this.img_url;
         saveImages(this.img_name, this.img_url);
-        window.location.reload(true);
     };
 
 
