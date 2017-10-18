@@ -32,15 +32,15 @@ $(function() {
     loadStorage();
 
     var createThisImage = function(name, url) {
-        if ((name === "" && url === "") || (url === "")) {
+        if ((name === "" && url === "") || (url === "")) { // Name & URL is empty - pop alert OR URL is empty but there is provided name still pop alert
             alert(" - expected input");
         }
-        else if (name === "" || document.getElementById(name)) { //if name exists or name is empty then create a random name
+        else if (name === "" || document.getElementById(name)) { // Name is empty or already exists then create a guid to set it as the name
             name = guid();
             name = new Image(url, name);
             name.createImage();
         }
-        else {
+        else { // There is a provided Name that's not existing and URL is not Empty
             name = new Image(url, name);
             name.createImage();
         }
