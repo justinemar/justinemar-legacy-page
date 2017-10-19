@@ -1,0 +1,109 @@
+*{
+    box-sizing: content-box;
+    color: #ffffff;
+}
+.active{
+    background-color: black;
+}
+body{
+    font-family: 'Calibri';
+}
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-style: italic;
+    font-weight: 500;
+    max-width: 500px;
+}
+input{
+    color: black;
+    border: 0;
+    padding: 10px;
+}
+
+
+/* Header */
+#main-header{
+    background-color: #3a3a3a;
+    
+}
+
+#main-header #current-date{
+    height: 70px;
+    line-height: 70px;
+    margin: 10px;
+}
+#reminder-section-set{
+    margin: 10px;
+}
+.set{
+    background-color: #6b6661;
+    max-width: 400px;
+    border-radius: 15px;
+    /* height: 100%; */
+    position: relative;
+    /* max-height: 500px; */
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+}
+.set-title{
+    text-align: center;
+    padding: 10px;
+}
+
+.add-new-reminder, .reminder-lists{
+    padding: 10px;
+}
+
+.reminder-lists{
+    position: relative;
+}
+.add-new-reminder{
+    background-color: rgb(113, 112, 112);
+    box-shadow: 0px 4px 6pt 0pt #5a5959;
+    border:0px;
+    font-size: 17px;
+    outline:none;
+    margin-right: 10px;
+}
+.add-new-reminder:hover{
+    background: transparent;
+    cursor: pointer;
+
+}
+.a-reminder{
+    padding: 5px;
+}
+
+#create-set{
+    background: #ff533d;
+    border: 0;
+    padding: 10px;
+    position: relative;
+    left: 25px;
+}
+.create-reminder-control{
+    margin: 15px;
+}
+.save-control{
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}.save-reminder-button{
+    background-color: #FF533D;
+    max-width: 200px;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border: 0;
+    outline: none;
+    box-shadow: 0px 2px 1px 0px #803e3e;
+    transition: all 1s linear;
+}.save-reminder-button:hover{
+    background-color: rgb(234, 56, 33);
+    cursor: pointer;
+}
