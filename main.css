@@ -16,7 +16,7 @@ body{
 .fake-header{
     background: #ffffff;
     width: 100%;
-    height: 100px;
+    min-height: 115px;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -214,7 +214,7 @@ body{
 
 }
 
-#project-bg-1:hover,#project-bg-2:hover,#project-bg-3:hover{
+#project-bg-1:hover,#project-bg-2:hover,#project-bg-3:hover,#project-bg-4{
     height: 80%;
 }
 
