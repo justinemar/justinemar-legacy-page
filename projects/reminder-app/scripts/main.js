@@ -138,7 +138,7 @@ $(function() {
         id = document.getElementsByClassName('set').length;
         id += 1;
         $reminderSection.append($('<div/>').addClass('set').attr('id', id)
-            .append($('<div/>').addClass('set-title').append($('<h1>').attr('contenteditable', 'true').text('Reminders')),
+            .append($('<div/>').addClass('set-title').append($('<h1>').attr('contenteditable', 'true').text('Name this reminder')),
                 $('<div/>').addClass('create-reminder-control').append($('<button>').addClass('add-new-reminder').text("+ add new"), $('<input>').addClass('create-reminder-value').attr({ type: "text", placeholder: "get something done" })), $('<div/>').addClass('reminder-lists'), $('<div/>').addClass('save-control').append($('<button>').addClass('save-reminder-button').text('Save'))));
     };
 
