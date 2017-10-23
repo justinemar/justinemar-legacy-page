@@ -123,11 +123,13 @@ $(function() {
         let defaultTxt = 'Enter your name here.';
         let settingInput = document.getElementById('input-huge');
         let InputTxtNode = settingInput.innerHTML;
-        if (InputTxtNode === defaultTxt || "")
+        if (InputTxtNode === defaultTxt || "") {
             alert('Please fill up the input field');
-        else
+        } else {
             localStorage.setItem('username', InputTxtNode);
         localStorage.setItem('firstVisit', false);
+           $(this).parent().parent().parent().parent().fadeOut('slow');
+        }
     })
 
     $('#create-set').on('click', function() {
