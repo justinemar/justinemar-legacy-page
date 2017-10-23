@@ -9,8 +9,14 @@ let getTime = function() {
 
 
 $(function() {
+    let greetUser = document.getElementById('message');
+    let userName = localStorage.getItem('username');
+    greetUser.innerHTML += userName;
+    let saveSetName;
+    let reminderNodeTxt;
     datetime = document.getElementById('date-year'); // re-assign
     let settingSaved = document.getElementById('setting-btn'); // to add event listener
+
     // Check if user visited before //
     var UserfirstVisit = function() {
         let firstTime;
@@ -32,7 +38,7 @@ $(function() {
 
     $(document).on('click', '.save-reminder-button', function() {
         const setID = $(this).parent().parent().attr('id');
-        const saveSetName = $(this).parent().siblings().children('h1').text();
+        saveSetName = $(this).parent().siblings().children('h1').text();
         let reminderList = $(this).parent().parent().children(".reminder-lists").children(); //get the reminder-lists children
         if (reminderList.length <= 0) {
             return false;
@@ -40,11 +46,38 @@ $(function() {
         else {
             let newSet = new ReminderSet(setID); // Create the set
             $(reminderList).each(function(i, e) {
-                const txt = $(e).text(); //set txt to the elem text node
-                newSet.add(new Reminder(txt, saveSetName)); // create and add each text node to the save set reminders
+                reminderNodeTxt = $(e).text(); //set txt to the elem text node
+                newSet.add(new Reminder(reminderNodeTxt, saveSetName)); // create and add each text node to the save set reminders
                 return true;
             });
         }
+    });
+    var checkEmptyList = function() {
+        let targetElem = $('.reminder-lists');
+        let setID;
+        if(targetElem.children().length <= 0){
+            setID = targetElem.parent().attr('id');
+            console.log(targetElem);
+            localStorage.removeItem(setID);
+        }
+    
+    }
+    $(document).on('click', '.delete-reminder', function() {
+        saveSetName = $(this).parent().parent().siblings().children('h1').text();
+        let fromSet = $(this).parent().parent().parent().attr('id');
+        let reminder = $(this).parent().text();
+        let list = $(this).parent().parent().children();
+        let updateSet = new ReminderSet(fromSet);
+        $(list).each(function(i, e) {
+            reminderNodeTxt = $(e).text(); //set txt to the elem text node
+            if (reminderNodeTxt === reminder) {
+                $(e).remove();
+                checkEmptyList();
+            } else {
+                updateSet.add(new Reminder(reminderNodeTxt, saveSetName));
+                checkEmptyList();// create and add each text node to the save set reminders
+            }
+        });
     });
 
     $(document).on('click', '.add-new-reminder', function() {
@@ -56,7 +89,7 @@ $(function() {
             targetContainer.prepend($('<div/>')
                 .addClass('a-reminder').attr('contenteditable', 'false').text(value).append($('<div/>').addClass('delete-reminder').attr('contenteditable', false))).hide().fadeIn();
     });
-
+    
     // model //
     var ReminderSet = function(set_name) {
         this.set_name = set_name;
@@ -69,7 +102,6 @@ $(function() {
         localStorage.setItem(this.set_name, JSON.stringify(this.reminders)) // Store the current object set name and serialized reminders
         return this;
     };
-
 
     // Loading saved sets //
     ReminderSet.loadSet = function() {
@@ -125,10 +157,11 @@ $(function() {
         let InputTxtNode = settingInput.innerHTML;
         if (InputTxtNode === defaultTxt || "") {
             alert('Please fill up the input field');
-        } else {
+        }
+        else {
             localStorage.setItem('username', InputTxtNode);
-        localStorage.setItem('firstVisit', false);
-           $(this).parent().parent().parent().parent().fadeOut('slow');
+            localStorage.setItem('firstVisit', false);
+            $(this).parent().parent().parent().parent().fadeOut('slow');
         }
     })
 
