@@ -7,6 +7,10 @@
 }
 body{
     font-family: 'Calibri';
+    background-image: url("https://pixabay.com/get/e83db20a2df0073ecd1f430de64e4596e16ae3d019b9164692f1c27c/electricity-1835546.jpg");
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
 }
 a{
     text-decoration: none;
@@ -25,10 +29,7 @@ input{
 
 
 /* Header */
-#main-header{
-    background-color: #3a3a3a;
-    
-}
+
 
 #main-header #current-date{
     height: 70px;
@@ -39,7 +40,7 @@ input{
     margin: 10px;
 }
 .set{
-    background-color: #6b6661;
+    background-color: rgba(14, 14, 13, 0.4);
     max-width: 400px;
     border-radius: 15px;
     /* height: 100%; */
@@ -62,11 +63,11 @@ input{
     position: relative;
 }
 .add-new-reminder{
-    background-color: rgb(113, 112, 112);
-    box-shadow: 0px 4px 6pt 0pt #5a5959;
-    border:0px;
+    background-color: rgb(80, 80, 80);
+    box-shadow: -1px 1px 6pt 0pt #101010;
+    border: 0px;
     font-size: 17px;
-    outline:none;
+    outline: none;
     margin-right: 10px;
 }
 .add-new-reminder:hover{
@@ -128,7 +129,7 @@ input{
 }
 
 #setting{
-    background: #FF6D63;
+    background: rgba(74, 74, 74, 0.15);
     max-width: 920px;
     margin: 0 auto;
     height: 500px;
@@ -165,4 +166,8 @@ input{
     background: #ff533d;
     border: 0;
     outline: 0;
+}
+
+#message{
+    padding: 10px;
 }
