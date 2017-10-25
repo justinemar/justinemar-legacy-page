@@ -1,7 +1,7 @@
 let datetime,
     date;
 var getTime = function() {
-    date = moment(new Date())
+    date = moment(new Date());
     datetime.innerHTML = date.format('dddd, MMMM Do YYYY, h:mm:ss a');
 };
 
@@ -10,7 +10,6 @@ var getTime = function() {
 
 $(function() {
     getRandomBackground();
-    let maxHeight;
     let targetContainer;
     datetime = document.getElementById('date-year'); // re-assign
     let settingSaved = document.getElementById('setting-btn'); // to add event listener
@@ -23,7 +22,7 @@ $(function() {
         let greetUser = document.getElementById('message');
         let userName = localStorage.getItem('username');
         //Check if user visited before, true => hide the setting , false => setting is visible by default but hide other elems
-        localStorage.getItem('visitedbefore') ? setting.style.display = 'none' : $(".greeting, .control").hide();;
+        localStorage.getItem('visitedbefore') ? setting.style.display = 'none' : $(".greeting, .control").hide();
         greetUser.innerHTML = userName + randomGreet; // Greet null and not visible if no username is stored//
         settingSaved.addEventListener('click', function() {
             let defaultTxt = 'Enter your name here.';
@@ -48,7 +47,7 @@ $(function() {
     setInterval(getTime, 1000); //Update time
 
     //random bg's//
- 
+
     function getRandomBackground() {
         var resourcesObject = [{
                 "author": "Bildermeines",
@@ -81,33 +80,6 @@ $(function() {
         document.body.style.backgroundImage = "url(" + "'" + randomImgIndex + "')";
     }
 
-
-    var checkEmptyList = function() {
-        let targetElem = $('.reminder-lists');
-        let setID;
-        if (targetElem.children().length <= 0) {
-            setID = targetElem.parent().attr('id');
-            localStorage.removeItem(setID);
-        }
-    };
-
-
-    var editable = document.querySelectorAll('a-reminder[contentEditable]');
-
-    for (var i = 0, len = editable.length; i < len; i++) {
-        editable[i].setAttribute('data-orig', editable[i].innerHTML);
-
-        editable[i].onblur = function() {
-            if (this.innerHTML == this.getAttribute('data-orig')) {
-                // no change
-            }
-            else {
-                // change has happened, store new value
-                this.setAttribute('data-orig', this.innerHTML);
-            }
-        };
-    }
-
     //Use Event delegation for our dynamic elements//
 
     $(document).on('click', '.delete-reminder', function() {
@@ -123,7 +95,7 @@ $(function() {
                 $(e).remove();
             }
             else {
-                updateSet.add(new Reminder(reminderNodeTxt, saveSetName));;
+                updateSet.add(new Reminder(reminderNodeTxt, saveSetName));
             }
 
         });
@@ -138,22 +110,22 @@ $(function() {
         const error = $(this).siblings('.error-box');
         const value = $(this).siblings('input').val(); //get the value of input
         targetContainer = $(this).parent().parent().children(".reminder-lists");
-        maxHeight = $(this).parent().parent().children(".reminder-lists").height();
         if (value.trim() === '') {
-                error.fadeIn(1000).delay(200).fadeOut(2000);
-        } else {
+            error.fadeIn(1000).delay(200).fadeOut(2000);
+        }
+        else {
             targetContainer.prepend($('<div/>')
                 .addClass('a-reminder').attr('contenteditable', 'false').text(value).append($('<div/>').addClass('delete-reminder').attr('contenteditable', false))).hide().fadeIn();
-        const setID = $(this).parent().parent().attr('id');
-        saveSetName = $(this).parent().siblings().children('h1').text();
-        let reminderList = $(this).parent().parent().children(".reminder-lists").children(); //get the reminder-lists children
-        let newSet = new ReminderSet(setID); // Create the set
-        $(reminderList).each(function(i, e) {
-            let reminderNodeTxt = $(e).text(); //set txt to the elem text node
-            newSet.add(new Reminder(reminderNodeTxt, saveSetName)); // create and add each text node to the save set reminders
-            return true;
-        });
-     }
+            const setID = $(this).parent().parent().attr('id');
+            saveSetName = $(this).parent().siblings().children('h1').text();
+            let reminderList = $(this).parent().parent().children(".reminder-lists").children(); //get the reminder-lists children
+            let newSet = new ReminderSet(setID); // Create the set
+            $(reminderList).each(function(i, e) {
+                let reminderNodeTxt = $(e).text(); //set txt to the elem text node
+                newSet.add(new Reminder(reminderNodeTxt, saveSetName)); // create and add each text node to the save set reminders
+                return true;
+            });
+        }
 
     });
 
@@ -166,7 +138,7 @@ $(function() {
 
     ReminderSet.prototype.add = function(reminder) {
         this.reminders.push(reminder);
-        localStorage.setItem(this.set_name, JSON.stringify(this.reminders)) // Store the current object set name and serialized reminders
+        localStorage.setItem(this.set_name, JSON.stringify(this.reminders)); // Store the current object set name and serialized reminders
         return this;
     };
 
@@ -189,7 +161,7 @@ $(function() {
                 //Get our key values //
                 for (; array_index < array.length; array_index++) {
                     /*Select the element id */
-                    $("#" + key).children('.reminder-lists').append($('<div/>').addClass('a-reminder').attr('contenteditable', 'true').text(array[array_index].description).append($('<div/>').addClass('delete-reminder').attr('contenteditable', false))) //Get the reminders
+                    $("#" + key).children('.reminder-lists').append($('<div/>').addClass('a-reminder').attr('contenteditable', 'true').text(array[array_index].description).append($('<div/>').addClass('delete-reminder').attr('contenteditable', false))); //Get the reminders
                 } //end
             }
         }

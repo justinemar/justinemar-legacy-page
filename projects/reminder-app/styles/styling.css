@@ -1,5 +1,9 @@
+
+
 *{
-    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
     color: #ffffff;
     outline: 0;
 }
@@ -9,11 +13,12 @@
 body{
     font-family: 'Calibri';
     background-repeat: no-repeat;
-    /* background-position: center; */
     background-size: cover;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
     transition: all .5s ease;
-    min-height: 100vh;
-    overflow: hidden;
+    min-height: 90vh;
 }
 a{
     text-decoration: none;
@@ -29,7 +34,12 @@ input{
     color: black;
     border: 0;
     padding: 10px;
+    -moz-transition: box-shadow 0.5s lienar;
+    -webkit-transition: -webkit-box-shadow 0.5s linear;
+    transition: -webkit-box-shadow 0.5s linear;
+    -o-transition: box-shadow 0.5s linear;
     transition: box-shadow 0.5s linear;
+    transition: box-shadow 0.5s linear, -webkit-box-shadow 0.5s linear;
     position: relative;
     z-index: 1;
     
@@ -39,7 +49,9 @@ input{
     width: 187px;
     height: 35px;
     position: absolute;
-    box-shadow: 0px 3px 0px 1px red;
+    -moz-box-shadow: 0px 3px 0px 1px red;
+    -webkit-box-shadow: 0px 3px 0px 1px red;
+            box-shadow: 0px 3px 0px 1px red;
     top: 106px;
     right: 16px;
     z-index: 0;
@@ -86,7 +98,8 @@ input{
 }
 .add-new-reminder{
     background-color: rgba(80, 80, 80, 0.2);
-    box-shadow: -1px 1px 6pt 0pt #101010;
+    -webkit-box-shadow: -1px 1px 6pt 0pt #101010;
+            box-shadow: -1px 1px 6pt 0pt #101010;
     border: 0px;
     font-size: 17px;
     outline: none;
@@ -151,7 +164,10 @@ input{
     margin: 10px;
     border: 0;
     outline: none;
-    box-shadow: 0px 2px 1px 0px #803e3e;
+    -webkit-box-shadow: 0px 2px 1px 0px #803e3e;
+            box-shadow: 0px 2px 1px 0px #803e3e;
+    -webkit-transition: all 1s linear;
+    -o-transition: all 1s linear;
     transition: all 1s linear;
 }.save-reminder-button:hover{
     background-color: rgb(234, 56, 33);
