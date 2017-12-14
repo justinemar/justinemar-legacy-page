@@ -1,22 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,800|Lora:400italic|Playfair+Display:700);
-*{
+* {
     padding: 0;
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
 }
-ul{
+
+ul {
     text-align: initial;
 }
-body{
+
+body {
     background-color: #ececec;
 }
 
-.fake-header a{
+.fake-header a {
     text-decoration: none;
     color: black;
     font-family: "Syncopate";
 }
-.fake-header{
+
+.fake-header {
     background: #ffffff;
     width: 100%;
     min-height: 115px;
@@ -25,13 +28,14 @@ body{
     z-index: 1;
     padding: 25px;
 }
-.fake-header h1{
+
+.fake-header h1 {
     line-height: 45px;
 
 }
 
 
-#header-content{
+#header-content {
     background-color: #ffffff;
     width: 100%;
     height: 100%;
@@ -39,16 +43,17 @@ body{
     box-shadow: inset 7px 2px 14px 1px #a5a0a0;
 }
 
-#header-content h1{
+#header-content h1 {
     font-family: "Syncopate";
 }
-#header-content h4{
+
+#header-content h4 {
     font-family: Segoe UI;
     font-size: 25px;
     font-weight: 100;
 }
 
-#main-header .parallax-1{
+#main-header .parallax-1 {
     opacity: 0.9;
     height: 585px;
     background-attachment: fixed;
@@ -58,7 +63,8 @@ body{
     background-size: cover;
 
 }
-.parallax-1 .caption-wrapper{
+
+.parallax-1 .caption-wrapper {
     width: 100%;
     height: 200px;
     position: absolute;
@@ -67,14 +73,15 @@ body{
 
 }
 
-.parallax-1 .caption{
+.parallax-1 .caption {
     max-width: 550px;
     position: relative;
     top: 10px;
     margin: 0 auto;
     margin-top: -380px;
 }
-.caption-wrapper #caption-bg{
+
+.caption-wrapper #caption-bg {
     background: black;
     max-width: 350px;
     height: 370px;
@@ -83,20 +90,25 @@ body{
     opacity: 0.8;
     margin: 0 auto;
 }
-.caption h1{
+
+.caption h1 {
     font-family: 'Segoe UI';
     color: #ffffff;
 }
-.caption > h1{
+
+.caption>h1 {
     font-size: 95px;
 }
-.caption h1:nth-child(3){
+
+.caption h1:nth-child(3) {
     font-size: 75px;
 }
-.highlight{
+
+.highlight {
     width: 100%;
 }
-.highlight h1{
+
+.highlight h1 {
     background: #FFD800;
     color: #ffffff;
     font-family: Segoe UI;
@@ -105,12 +117,13 @@ body{
     font-size: 100px;
 }
 
-#main-section{
+#main-section {
     padding: 35px;
     background-color: #ffffff;
 }
 
-#main-section .about-me-wrapper, #main-section .portfolio-wrapper{
+#main-section .about-me-wrapper,
+#main-section .portfolio-wrapper {
     padding: 10px;
     background: #ffffff;
     height: 100%;
@@ -120,11 +133,12 @@ body{
 
 }
 
-#main-section .portfolio-wrapper{
+#main-section .portfolio-wrapper {
     padding: 0px;
 }
 
-.about-me-wrapper h1, .portfolio-wrapper > h1{
+.about-me-wrapper h1,
+.portfolio-wrapper>h1 {
     text-align: center;
     font-size: 60px;
     font-family: 'Raleway';
@@ -134,7 +148,8 @@ body{
     background: #000000;
 }
 
-.about-me-p, .portfolio-content{
+.about-me-p,
+.portfolio-content {
     width: 100%;
     margin-top: 60px;
     margin-bottom: 360px;
@@ -142,7 +157,8 @@ body{
     overflow: hidden;
     position: relative;
 }
-.about-me-p p{
+
+.about-me-p p {
     width: 100%;
     max-width: 900px;
     font-size: 17px;
@@ -153,11 +169,13 @@ body{
     letter-spacing: 1px;
 }
 
-.project{
+.project {
     width: 100%;
     max-height: 450px;
     height: 450px;
-}.project-info-box{
+}
+
+.project-info-box {
     max-width: 590px;
     text-align: center;
     float: right;
@@ -166,7 +184,8 @@ body{
     font-family: 'Segoe UI';
     font-size: 17px;
 }
-#project-bg-1{
+
+#project-bg-1 {
     transition: all 0.2s linear;
     background-image: url(./pomodoroWeb.png);
     background-repeat: no-repeat;
@@ -176,9 +195,10 @@ body{
     height: 75%;
     position: relative;
     float: left;
-    max-width: 608px;
+    max-width: 475px;
 }
-#project-bg-2{
+
+#project-bg-2 {
     transition: all 0.2s linear;
     background-image: url(./localized-image-storage-app.png);
     background-repeat: no-repeat;
@@ -188,9 +208,10 @@ body{
     height: 75%;
     position: relative;
     float: left;
-    max-width: 608px;
+    max-width: 475px;
 }
-#project-bg-3{
+
+#project-bg-3 {
     transition: all 0.2s linear;
     background-image: url(./reminder-app.png);
     background-repeat: no-repeat;
@@ -200,10 +221,11 @@ body{
     height: 75%;
     position: relative;
     float: left;
-    max-width: 608px;
+    max-width: 475px;
 
 }
-#project-bg-4{
+
+#project-bg-4 {
     transition: all 0.2s linear;
     background-image: url(./quote-generator.png);
     background-repeat: no-repeat;
@@ -213,10 +235,11 @@ body{
     height: 75%;
     position: relative;
     float: left;
-    max-width: 608px;
+    max-width: 475px;
 
 }
-#project-bg-5{
+
+#project-bg-5 {
     transition: all 0.2s linear;
     background-image: url(./weather-widget.png);
     background-repeat: no-repeat;
@@ -226,52 +249,62 @@ body{
     height: 75%;
     position: relative;
     float: left;
-    max-width: 608px;
+    max-width: 475px;
 
 }
 
-#project-bg-1:hover,#project-bg-2:hover,#project-bg-3:hover,#project-bg-4:hover,#project-bg-5:hover{
+#project-bg-1:hover,
+#project-bg-2:hover,
+#project-bg-3:hover,
+#project-bg-4:hover,
+#project-bg-5:hover {
     height: 80%;
 }
 
 
 
 
-.blur{
-     -webkit-filter: blur(3px);
+.blur {
+    -webkit-filter: blur(3px);
     filter: blur(3px);
 }
 
-#left-navigation{
+#left-navigation {
     background: #404040;
     height: 280px;
     width: 50px;
     position: fixed;
     top: 195px;
 }
-.btn-nav{
+
+.btn-nav {
     transition: background 1s linear, border-bottom 1s linear;
     height: 70px;
 }
-.btn-nav:hover{
+
+.btn-nav:hover {
     background-color: #646464;
     border-bottom: 1px solid #fdda17;
 }
 
 
-.fa-twitter,.fa-github,.fa-linkedin,.fa-wakatime{
+.fa-twitter,
+.fa-github,
+.fa-linkedin,
+.fa-wakatime {
     color: #ffffff;
     padding: 9px;
     font-size: 35px !important;
 }
-.fa-wakatime{
+
+.fa-wakatime {
     font-weight: 900;
     font-family: cursive;
     padding: 5px;
 }
 
 
-.go-top{
+.go-top {
     width: 50px;
     height: 50px;
     background: #fdda17;
@@ -279,24 +312,28 @@ body{
     right: 30px;
     position: fixed;
     display: none;
-}.go-top a{
+}
+
+.go-top a {
     text-decoration: none;
 }
-#clickable-wrap{
+
+#clickable-wrap {
     width: 100%;
     height: 100%;
 }
-#arrow{
+
+#arrow {
     text-align: center;
     line-height: 69px;
     font-size: 50px;
 }
 
-.github-widget{
+.github-widget {
     margin: 0 auto;
 }
 
-figure{
+figure {
     max-width: 700px;
     margin: 0 auto;
 }
