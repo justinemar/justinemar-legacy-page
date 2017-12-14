@@ -1,47 +1,58 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./styles/styling.css" type="text/css" />
-        <script type="text/javascript" src="./scripts/moments.js"></script>
-        <script type="text/javascript" src="./scripts/main.js"></script>
-    </head>
- <body>
-       <header id="main-header">
-                <div id="current-date">
-                    <span id="date-year"></span>
-                </div>
-       </header>
-       <div class="greeting">
-           <div id="message-wrapper">
-               <h1 id="message">Welcome back!, </h1>
-           </div>
-       </div>
-       
-        <div class="control">
-         <button id="create-set">Create new set</button>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title> Lodi </title>
+    <meta name="description" content="A simple reminder app, create a set of reminders from work to personal reminders. Daily inspiring beautiful background scenery and motivational quotes. ">
+    <meta name="theme-color" content="#E64545">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Lodi">
+    <!-- Add to home screen -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- More info: https://developer.chrome.com/multidevice/android/installtohomescreen -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/styling.css" type="text/css" />
+    <script type="text/javascript" src="./scripts/moments.js"></script>
+    <script type="text/javascript" src="./scripts/lodi.min.js"></script>
+</head>
+
+<body>
+    <header id="main-header" role="banner">
+        <div id="current-date">
+            <span id="date-year"></span>
         </div>
-        
-       <section id="reminder-section-set">
-       </section>
-       
-       <aside id="setting">
-           <div class="setting-wrapper">
-               <h5>Settings</h5>
-               <div style="clear:both;"></div>
-               <div class="personalized-name-wrapper">
-                   <h1>Hello, What's your name?</h1>
-                   <div id="input-huge" contenteditable="true">Enter your name here.</div>
-                   <div class='btn-setting-saved'>
-                       <button id="setting-btn">Done</button>
-                   </div>
-               </div>
-           </div>
-       </aside>
-    </body>
+    </header>
+    <div class="greeting">
+        <div id="message-wrapper">
+            <h1 id="message">Welcome back!, </h1>
+        </div>
+    </div>
+
+    <div class="control">
+        <button id="create-set">Create new set</button>
+    </div>
+
+    <section id="reminder-section-set" role="region">
+    </section>
+
+    <aside id="setting" role="complementary">
+        <div class="setting-wrapper">
+            <h5>Settings</h5>
+            <div style="clear:both;"></div>
+            <div class="personalized-name-wrapper">
+                <h1>Hello, What's your name?</h1>
+                <div id="input-huge" contenteditable="true">Enter your name here.</div>
+                <div class='btn-setting-saved'>
+                    <button id="setting-btn">Done</button>
+                </div>
+            </div>
+        </div>
+    </aside>
+</body>
+
 </html>
